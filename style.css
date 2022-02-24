@@ -10,15 +10,15 @@
 .flexdiv {
     display: flex;
     align-items: center;
-    
+
 
 }
 
 nav {
     padding: 10px 2%;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
     position: sticky;
     top: 0;
     z-index: 10;
@@ -29,38 +29,38 @@ nav {
     cursor: pointer;
 }
 
-.navmiddle {
+.navleft {
+    margin-right: 70%;
+    cursor: pointer;
+}
+
+.dropdownNav {
     position: relative;
     display: inline-block;
-    margin-right: 75;
-
-}
-.cities {
-    display: flex;
-    margin-right: 300;
-    padding: 16;
+    margin-right: 50%;
+    padding: 10;
     font-size: 25;
 }
-.trails {
-    margin-left: 100%;
-}
 
-.beaches {
-    margin-left: 100%;
-}
 
 .dropdown {
-    margin-top: 10%;
-    margin-left: -5%;
+    margin-right: 100%;
+    background: red;
+    cursor: pointer;
+}
+
+.dropdownContent {
+    margin-top: 57%;
+    margin-left: -30%;
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-.dropdown a {
+.dropdownContent a {
     color: black;
     padding: 22px 16px;
     text-decoration: none;
@@ -71,8 +71,8 @@ nav {
     cursor: pointer;
 }
 
-/*Javascript*/
-/*.dropdown:hover .dropdown-content {display: block;}*/
+
+.dropdownNav:hover .dropdownContent {display: block;}
 
 
 
@@ -83,28 +83,30 @@ nav {
 }
 
 .Intro {
+    margin-top: -5%;
     width: 100%;
     height: 100%;
     background: rgb(248, 244, 237);
     background-image: url("images/landscapeVector.svg");
     background-size: cover;
-    display:inline-flex
+    display: inline-flex
 }
 
 .Intro img {
     width: 100%;
     height: 100%;
-    background:rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .titleBox {
-    width: 33%; 
-    height: 100%; 
-    background: rgba(255, 255, 255, 0.2); 
+    margin-top: 5%;
+    width: 33%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .Intro h1 {
-    margin-left: 15%;
+    margin-left: 5%;
     font-size: 84;
     font-weight: bold;
 }
@@ -121,122 +123,104 @@ nav {
     margin-top: 100;
 }
 
-.culture {
-    margin-top: 10%;
-    width: 100%;
-    height: 100%;
-    background-image: url("images/art-6626881.png");
-    background-size: cover;
-    display:inline-flex;
+.learnMore {
+    width: 80%;
+    margin-left: 10%;
 }
 
-.culture .archeology {
-    margin-left: 75%;
-    width: 35%;
-    height: 25%;
+.learnMore p {
+
+    margin-left: -5%;
+    margin-top: 50%;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    color: #fff;
+
+
 }
 
-.culture .art {
-    margin-top: 75%;
-    width: 55%;
-    height: 25%;
+.learnMore button {
+
+    width: 100;
+    height: 50;
+    border-radius: 10%;
+    background-color: rgba(214, 50, 0, 0.979);
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 20%;
+    margin-top: 5%;
+
+
 }
 
-.culture {
-    margin-left: 5%;
-    width: 33%; 
-    height: 100%; 
-    background: rgba(255, 255, 255, 0.2); 
+.learnMore button a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.culture h1 {
-    margin-left: -15%;
-    font-size: 84;
-    font-weight: bold;
+/*Locations*/
+
+.locations h1 {
+    margin-left: 40%;
 }
 
-.culture h2 {
-    margin-left: -15%;
-    font-size: 54;
-    font-weight: bold;
-}
+/*Grid*/
 
-.culture p {
-    margin-left: -15%;
-    font-size: 36;
-    margin-top: 100;
-}
-
-
-.CarbonImpact h1{
-    margin-left: 35%;
-    font-size: 64;
-}
-
-.CarbonImpact h2{
-    margin-left: 30%;
-    font-size: 48;
+.container {
+    margin-left: 1%;
     width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px 600px;
+    gap: 20px;
 }
 
-.CarbonImpact {
+.gallery-item {
     width: 100%;
     height: 100%;
-    margin-top: 0%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
 }
 
-.CarbonImpact .title {
-    width: 100%; 
-    height: 20%; 
-    background: rgba(0, 0, 0, 0.2); 
-}
-
-.co2graph .graph_1 {
-
-    margin-left: 10%;
+.gallery-item .images {
     width: 100%;
     height: 100%;
-    font-size: 45;
-    
-
+    overflow: hidden;
 }
 
-.co2graph .subtitle {
-    display: inline-block;
-    margin-left: 0%;
-    width: 20%;
-    float: left;
-}
-
-
-.co2graph .graph_2 {
-
-    margin-left: 10%;
+.gallery-item .image img {
     width: 100%;
     height: 100%;
-    font-size: 45;
-    margin-top: -35%;
-    
+    object-fit: cover;
+    /*when resizing page images will stay focuse on the center, not top left*/
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
-.co2graph .graph_3 {
-
-    margin-left: 10%;
-    width: 100%;
-    height: 100%;
-    font-size: 45;
-    margin-top: -37%;
-
-}
-
-.co2graph .trees {
-    float: right;
-    margin-top: -80%;
-
+.gallery-item:hover .image img {
+    transform: scale(1.1);
 }
 
 
+.gallery-item .titleText {
 
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    /*Set actual position of title to center, it was off center with longer words*/
+    transform: translate(-50%, 50%);
+    color: #fff;
+    font-size: 25px;
+    /*Cant receive pointers events*/
+    pointer-events: none;
+    transition: .3s ease-in-out;
 
+}
+
+.gallery-item:hover .titleText {
+    opacity: 1;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    /* animation: move-down .3s linear;
+    padding: 1em;
+    width: 100%;*/
+}
