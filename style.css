@@ -30,14 +30,14 @@ nav {
 }
 
 .navleft {
-    margin-right: 70%;
+    margin-right: 65%;
     cursor: pointer;
 }
 
 .dropdownNav {
     position: relative;
     display: inline-block;
-    margin-right: 50%;
+    margin-right: 10%;
     padding: 10;
     font-size: 25;
 }
@@ -71,51 +71,24 @@ nav {
     cursor: pointer;
 }
 
+.impact a {
+    position: relative;
+    display: inline-block;
+    margin-right: 10%;
+    font-size: 25;
+    text-decoration: none;
+    color: black;
 
-.dropdownNav:hover .dropdownContent {display: block;}
+}
+
+
+.dropdownNav:hover .dropdownContent {
+    display: block;
+}
 
 
 
 /*Content*/
-.starter {
-    margin-left: 0%;
-    top: 0;
-}
-
-.Intro {
-    margin-top: -5%;
-    width: 100%;
-    height: 100%;
-    background: rgb(248, 244, 237);
-    background-image: url("images/SardegnaWallpaper.jpg");
-    background-size: cover;
-    display: inline-flex;
-}
-
-.Intro img {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.titleBox {
-    margin-top: 5%;
-    width: 33%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.Intro h1 {
-    margin-left: 5%;
-    font-size: 84;
-    font-weight: bold;
-}
-
-.Intro h2 {
-    margin-left: 5%;
-    font-size: 54;
-    font-weight: bold;
-}
 
 .Intro p {
     margin-left: 5%;
@@ -157,6 +130,62 @@ nav {
     text-decoration: none;
 }
 
+/*SlideShow*/
+.slideContainer {
+    top: -8%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    z-index: 1;
+}
+
+.slides img {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+/*next and previous buttons*/
+.prev,
+.next {
+
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -20px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    border-radius: 0 3px 3px 0;
+    text-decoration: none;
+
+}
+
+
+/*Bullets*/
+.dots {
+    margin-left: -5%;
+    margin-top: -2%;
+    z-index: 2;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
 /*Locations*/
 
 .locations {
@@ -166,6 +195,21 @@ nav {
 .locations h1 {
     padding: 2%;
     margin-left: 40%;
+}
+
+.caption {
+
+    color: #fff;
+    padding: 8px 12px;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 24%;
+    text-align: center;
+}
+
+.caption p {
+    font-size: 32;
+    margin-left: 20%;
 }
 
 /*Grid*/
@@ -237,6 +281,7 @@ nav {
 .mainPlace {
     margin-left: 2%;
 }
+
 .mainPlace .image img {
     width: 90%;
     height: 70%;
@@ -248,8 +293,109 @@ nav {
     background: rgba(0, 0, 0, 0.2);
     width: 90%;
     height: 30%;
-    
 
+
+}
+
+.coast {
+    margin-top: 5%;
+    width: 100%;
+    height: 50%;
+}
+
+.coast h1 {
+    margin-left: 50%;
+    margin-bottom: 2%;
+}
+
+.coast .content {
+    margin-left: 2%;
+    display: flex;
+}
+
+.coast .content p {
+    margin-left: 10%;
+    width: 25%;
+    font-size: 22;
+    height: auto;
+    text-align: center;
+
+}
+
+.coast .content img {
+    max-width: 50%;
+    max-height: 75%;
+    width: auto;
+    height: auto;
+}
+
+.mountains {
+
+    margin-top: 10%;
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 128, 0, 0.185);
+
+}
+
+.mountains h1 {
+    margin-left: 50%;
+    margin-bottom: 2%;
+}
+
+.mountains .content {
+    margin-left: 2%;
+    display: flex;
+}
+
+.mountains .content p {
+    width: 25%;
+    font-size: 22;
+    height: auto;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.mountains .content img {
+    max-width: 50%;
+    max-height: 75%;
+    width: auto;
+    height: auto;
+    margin-left: 30%;
+}
+
+.countryside {
+    margin-top: 2%;
+    width: 100%;
+    height: 50%;
+
+}
+
+.countryside h1 {
+    margin-left: 50%;
+    margin-bottom: 2%;
+}
+
+.countryside .content {
+    margin-left: 2%;
+    display: flex;
+}
+
+.countryside .content p {
+    margin-left: 10%;
+    width: 25%;
+    font-size: 22;
+    height: auto;
+    text-align: center;
+
+}
+
+.countryside .content img {
+    margin-left: 0;
+    max-width: 50%;
+    max-height: 75%;
+    width: auto;
+    height: auto;
 }
 
 /*Footer*/
@@ -315,7 +461,7 @@ nav {
     font-weight: bold;
 }
 
-.developers a{
+.developers a {
     padding: 0.5%;
     text-decoration: none;
     font-size: 18;
@@ -327,4 +473,3 @@ nav {
     font-size: 26;
     margin-bottom: 1%;
 }
-
