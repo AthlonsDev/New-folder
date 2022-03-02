@@ -11,7 +11,6 @@
     display: flex;
     align-items: center;
 
-
 }
 
 nav {
@@ -24,8 +23,8 @@ nav {
     z-index: 10;
 }
 
-.navleft {
-    margin-left: 5px;
+.navRight {
+    margin-left: -10%;
     cursor: pointer;
 }
 
@@ -111,24 +110,7 @@ nav {
 
 }
 
-.learnMore button {
 
-    width: 100;
-    height: 50;
-    border-radius: 10%;
-    background-color: rgba(214, 50, 0, 0.979);
-    border-color: rgba(0, 0, 0, 0);
-    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
-    margin-left: 20%;
-    margin-top: 5%;
-
-
-}
-
-.learnMore button a {
-    color: #fff;
-    text-decoration: none;
-}
 
 /*SlideShow*/
 .slideContainer {
@@ -167,7 +149,7 @@ nav {
 
 /*Bullets*/
 .dots {
-    margin-left: -5%;
+    margin-left: 6%;
     margin-top: -2%;
     z-index: 2;
 }
@@ -184,6 +166,28 @@ nav {
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+}
+
+.learnMore {
+    margin-top: -5%;
+}
+
+.learnMore button {
+
+    width: 100;
+    height: 50;
+    border-radius: 10%;
+    background-color: rgba(214, 50, 0, 0.979);
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 20%;
+    margin-top: 2%;
+
+}
+
+.learnMore button a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /*Locations*/
@@ -215,8 +219,8 @@ nav {
 /*Grid*/
 
 .container {
-    margin-left: 15%;
-    width: 50%;
+    margin-left: 5%;
+    width: 75%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 100px 300px;
@@ -289,12 +293,9 @@ nav {
 }
 
 .mainPlace .description {
-
     background: rgba(0, 0, 0, 0.2);
     width: 90%;
     height: 30%;
-
-
 }
 
 .coast {
@@ -314,6 +315,7 @@ nav {
 }
 
 .coast .content p {
+
     margin-left: 10%;
     width: 25%;
     font-size: 22;
@@ -323,17 +325,19 @@ nav {
 }
 
 .coast .content img {
+
     max-width: 50%;
-    max-height: 75%;
+    max-height: 50%;
     width: auto;
     height: auto;
+
 }
 
 .mountains {
 
     margin-top: 10%;
     width: 100%;
-    height: 50%;
+    height: 60%;
     background: rgba(0, 128, 0, 0.185);
 
 }
@@ -408,14 +412,13 @@ nav {
 
 .links {
     display: grid;
-    margin-left: 2%;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    margin: 2%;
 }
 
 .links h1 {
     font-size: 22;
     margin-bottom: 1%;
+    line-height: 1;
 }
 
 .links a {

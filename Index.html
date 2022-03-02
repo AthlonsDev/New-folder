@@ -5,28 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--TODO: Link Javascript-->
 </head>
+<!--Link to CSS File-->
 <link rel="stylesheet" href="style.css">
 
 <body>
-
+<!--"Master" div for the navigation bar-->
     <nav class="flexdiv">
-
+<!-- Left Side of the navigation bar -->
         <div class="navleft flexdiv">
-
+<!-- Logo image and link to the main page -->
+<!--TODO: Logo image and linkt ot the home page -->
             Side Menu
             logo
         </div>
-
+<!-- right side of the navigation bar -->
         <div class="navRight flexdiv">
+            <!-- "Master" div of the dropdown menu -->
             <div class="dropdownNav">
+                <!-- First 'button' opening the dropdown -->
                 <div class="dropdown">Cities</div>
+                <!-- dropdown content with links -->
                 <div class="dropdownContent">
                     <a href="#">Link_1</a>
                     <a href="#">Link_2</a>
                     <a href="#">Link_3</a>
                 </div>
             </div>
+            <!-- second dropdown, same thing, same class name -->
             <div class="dropdownNav">
                 <div class="dropdown">Regions</div>
                 <div class="dropdownContent">
@@ -43,11 +50,12 @@
                     <a href="#">Link_9</a>
                 </div>
             </div>
-
+<!--TODO: Add Actual places and link to pages-->
+<!-- link to page describing environmental impact of staycation -->
             <div class="impact">
 
                 <a href="">Advantages</a>
-
+<!--TODO: create page-->
             </div>
 
         </div>
@@ -55,8 +63,10 @@
     </nav>
 
     <!----Content---->
-
+<!--TODO: Add Javascript to slideshow multiple images-->
+<!-- slideshow div containing all the slides -->
     <div class="slideContainer">
+        <!-- acutal slide containing the image and text -->
         <div class="slides">
             <img src="images/SardegnaWallpaper.jpg" alt="Nature">
             <div class="number">
@@ -75,22 +85,25 @@
 
                 </div>
             </div>
+            <!-- Dots created with simple text aligned to the center -->
             <div class="dots" style="text-align: center;">
+                <!-- clicking on the dots changes the slide image and text -->
                 <span class="dot" onclick="currentslide(1)"></span>
                 <span class="dot" onclick="currentslide(2)"></span>
                 <span class="dot" onclick="currentslide(3)"></span>
             </div>
         </div>
+        <!-- same concept of the dots but with back and forward arrows -->
         <a href="" class="prev"> <strong>&#10094;</strong> </a>
         <a href="" class="next"> <strong>&#10095;</strong> </a>
 
 
     </div>
 
-
+<!-- diving into the actual content of the website -->
     <div class="locations">
 
-
+<!--TODO: Add actual locations and clickable linking to location page-->
         <div class="title">
 
             <h1>Locations To Visit</h1>
@@ -100,12 +113,15 @@
 
 
         <div class="places">
-
+<!-- containter of all the section -->
             <div class="container">
-
+<!-- container for the gallery, just an encapsulation  -->
                 <div class="gallery-container">
+                    <!-- Actual gallery item containing image and text/link -->
                     <div class="gallery-item">
+                        <!-- gallery containing the image -->
                         <div class="gallery">
+                            <!-- more encapsulation, perhaps unnecessary, but it keeps it more readable imo -->
                             <div class="image">
                                 <img src="https://source.unsplash.com/1600x900/?nature" alt="Nature">
                             </div>
@@ -114,7 +130,7 @@
                     </div>
                 </div>
 
-
+<!-- same gallery item/container copied a couple of times -->
                 <div class="gallery-gallery-container">
 
                     <div class="gallery-item">
@@ -209,7 +225,7 @@
 
 
             </div>
-
+<!-- one more image, larger and outside the grid of the gallery -->
             <div class="mainPlace">
                 <div class="image">
                     <img src="https://source.unsplash.com/1600x900/?nature" alt="Nature" class="halfscreen">
@@ -224,7 +240,8 @@
 
     <!---Activities--->
 
-
+<!--TODO: Add locations descriptions and link to pages-->
+<!-- sections to highlight key locations of the region -->
     <div class="coast">
         <h1>Beaches</h1>
         <div class="content">
@@ -263,11 +280,10 @@
 </body>
 
 <footer>
-    <!--Add Sitemap, about us, contact us social links-->
-
+<!--TODO: Add links to pages, Social and Github-->
     <div class="footer">
 
-
+<!-- links to other path of the website, links that, i have found, are usually placed in the footer -->
         <div class="links">
 
             <h1>About Us</h1>
@@ -281,7 +297,7 @@
             <a href="">Security</a>
 
         </div>
-
+<!-- Social links -->
         <div class="social">
 
             <h1>Follow Us</h1>
@@ -294,11 +310,11 @@
 
 
         </div>
-
+<!-- This is usually found in open source projects, or companies that use their own API and things like that -->
         <div class="developers">
 
             <h1>Developer</h1>
-
+<!-- A Github link to the repository where all the steps of the website can be tracked, from start to finish -->
             <p>This Website source code will be entirely available in Github, for resources and contributions</p>
             <a href="">Github Repository</a>
 
