@@ -432,7 +432,9 @@ nav {
     max-height: 50%;
     width: auto;
     height: auto;
-    margin-left: 30%;
+    margin-left: 10%;
+    float: right;
+    
 }
 
 .countryside {
