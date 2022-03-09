@@ -29,6 +29,19 @@ nav {
 
 }
 
+.logoContainer {
+    width: 50;
+    height: 50;
+    align-items: center;
+    margin-bottom: 5;
+}
+
+.logoContainer .image img {
+    width: 75;
+    height: 75;
+
+}
+
 .navRight {
     margin-left: -10%;
     float: right;
@@ -41,7 +54,7 @@ nav {
 }
 
 .item {
-    margin-right: 20%;
+    margin-right: 10%;
 }
 
 .dropdownNav {
@@ -545,3 +558,36 @@ nav {
     font-size: 26;
     margin-bottom: 1%;
 }
+
+
+
+/* Responsive Layout */
+
+    /* For tablets: */
+    @media only screen and (max-width: 800px) {
+
+        .item {
+            display: none;
+            /* TODO: Add Hamburger Icon */
+        }
+
+        .slides .caption {
+            margin-left: 15%;
+        }
+
+        .container {
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows: 100px 150px;
+        }
+
+        .mainPlace .image img {
+            height: 50%;
+        }
+
+
+        .footer .developers {
+            margin-left: 30%;
+        }
+
+    }
+  
