@@ -1,95 +1,55 @@
 * {
-    top: 0;
     margin: 0;
-    box-sizing: border-box;
-
 }
 
 /*NavBar*/
-
-.flexdiv {
-    display: flex;
-    align-items: center;
-
-}
-
-nav {
-    padding: 10px 2%;
-    /*justify-content: space-between;*/
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 0.5);
+.navbar {
+    background-color: blue;
+    z-index: 2;
     position: sticky;
     top: 0;
-    z-index: 10;
+    display: inline-flex;
 }
 
-.menuIcon img {
-    width: 30%;
-    height: 30%;
-    margin-left: 80%;
-    display: none;
-}
 
-.navleft {
-    margin-right: 80%;
-    cursor: pointer;
-
-}
-
-.logoContainer {
-    width: 50;
-    height: 50;
-    align-items: center;
-    margin-bottom: 5;
-}
-
-.logoContainer .image img {
-    width: 75;
-    height: 75;
-
-}
-
-.navRight {
-    margin-left: -10%;
-    float: right;
-    cursor: pointer;
-}
-
-.menuItems {
-    display: flex;
-    list-style: none;
-}
-
-.item {
-    margin-right: 10%;
-}
-
-.dropdownNav {
-    /* position: relative; */
-    font-size: 25;
-    text-align: center;
+.navbar a {
     float: left;
-    overflow: hidden;
+    font-size: 18;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    padding: 14px 22px;
+    margin: 0;
+    font-size: 22;
+    background-color: inherit;
+    color: white;
 }
 
 
-.dropdownNav .dropdown {
-    margin-right: 100%;
-    cursor: pointer;
+/* .navbar a:hover, .dropdown:hover .dropbtn {
+    color: ;
+  } */
 
-}
-
-.dropdownContent {
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
-    /* margin-top: 4%;  */
+    background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 2;
 }
 
-.dropdownContent a {
+.dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
@@ -98,36 +58,15 @@ nav {
     text-align: left;
 }
 
-.navmiddle {
-    cursor: pointer;
+.dropdown-content a:hover {
+    background-color: #ddd;
 }
 
-.impact a {
-    position: relative;
-    display: inline-block;
-    margin-right: 10%;
-    font-size: 25;
-    text-decoration: none;
-    color: black;
-
-}
-
-/*Animations*/
-/*Animating to show the dropdown Menu*/
-.dropdownNav:hover .dropdownContent {
+.dropdown:hover .dropdown-content {
     display: block;
-
 }
 
-.dropdownContent a:hover {
-    background-color: rgba(255, 255, 255, .8);
 
-}
-
-/* Animating change of color on the links inside the dropdown */
-.dropdownNav:hover .dropdown {
-    color: #fff;
-}
 
 /*Content*/
 
@@ -135,7 +74,7 @@ nav {
 /*SlideShow*/
 .slideContainer {
     box-sizing: border-box;
-    top: -8%;
+    top: -10%;
     height: 100%;
     width: 100%;
     position: relative;
@@ -181,7 +120,7 @@ nav {
 
 
 .slides {
-    display: none;
+    display: block;
 }
 
 .slides .caption {
