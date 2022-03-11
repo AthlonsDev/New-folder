@@ -1,13 +1,16 @@
 // Navigation Bar Animation
-window.onscroll = function() {scrolling()};
+window.onscroll = function () {
+    scrolling()
+};
 const nav = document.getElementById("nav")
+const logo = document.getElementById("logo")
 
 
 function scrolling() {
-    if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-       nav.style.padding = "2px 2%";
-    } 
-    else{
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        nav.style.padding = "2px 2%";
+
+    } else {
         nav.style.padding = "10px 2%";
     }
 }
@@ -33,6 +36,20 @@ showSlides();
 //     setTimeout(showSlides, 3000);
 // }
 
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    sliderIndex++;
+    if (sliderIndex > slides.length) {
+        sliderIndex = 1
+    }
+    slides[sliderIndex - 1].style.display = "block"
+    setTimeout(showSlides, 3000);
+}
+/*
 // Slideshow user controlled
 // var slideIndex = 1;
 

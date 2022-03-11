@@ -67,6 +67,7 @@
 }
 
 
+
 /*Content*/
 
 
@@ -78,8 +79,45 @@
     width: 100%;
     position: relative;
     margin: auto;
-    z-index: 1;
+    z-index: 2;
 }
+
+.bookingContainer {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    height: 20%;
+    margin-top: 10%;
+    margin-left: 25%;
+    position: absolute;
+
+}
+
+.bookingContainer h1 {
+    margin-left: 40%;
+}
+
+.bookingContainer .form {
+    height: 20%;
+    margin-left: 2%;
+    margin-top: 5%;
+    border-width: 0;
+    width: 30%;
+}
+
+.bookingContainer  .submit {
+    margin-left: 5%;
+    width: 20%;
+    height: 20%;
+    border-width: 0;
+    background-color: red;
+    font-size: 24;
+    font-style: italic;
+    cursor: pointer;
+}
+
+
+
+
 
 .slides {
     display: block;
@@ -506,4 +544,49 @@
 .developers h1 {
     font-size: 26;
     margin-bottom: 1%;
+}
+
+
+
+
+
+/* Responsive Layout */
+
+/* For tablets: */
+@media only screen and (max-width: 800px) {
+
+    .item {
+        display: none;
+    }
+
+    .menuIcon img {
+        display: block;
+    }
+
+
+    .slideContainer {
+        height: auto;
+    }
+
+    .slides .caption {
+        margin-left: 15%;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 100px 150px;
+    }
+
+    .mainPlace .image img {
+        height: auto;
+    }
+
+
+    .footer .developers {
+        margin-left: 30%;
+    }
+
+
+
+
 }

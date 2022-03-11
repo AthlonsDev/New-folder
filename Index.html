@@ -14,6 +14,58 @@
 <body>
     <!--"Master" div for the navigation bar-->
 
+    <nav class="flexdiv" id="nav">
+        <!-- Left Side of the navigation bar -->
+        <div class="navleft flexdiv">
+            <!-- Logo image and link to the main page -->
+            <div class="logoContainer">
+                <div class="image">
+                    <img src="images/Logo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- right side of the navigation bar -->
+        <div class="navRight flexdiv">
+            <div class="menuIcon">
+                <img src="images/menu.png" alt="">
+            </div>
+            <ul class="menuItems">
+                <li class="item">
+                    <div class="dropdownNav">
+                        <!-- First 'button' opening the dropdown -->
+                        <div class="dropdown">Cities</div>
+                        
+                        <!-- dropdown content with links -->
+                        <div class="dropdownContent">
+                            <a href="#">Cagliari</a>
+                            <a href="#">Sassari</a>
+                            <a href="#">Alghero</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <!-- second dropdown, same thing, same class name -->
+                    <div class="dropdownNav">
+                        <div class="dropdown">Activities</div>
+                        <div class="dropdownContent">
+                            <a href="#">Swimming</a>
+                            <a href="#">Cycling</a>
+                            <a href="#">Skiing</a>
+                            <a href="#">Sightseeing</a>
+                            <a href="#">Other</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <!--TODO: Add Actual places and link to pages-->
+                    <!-- link to page describing environmental impact of staycation -->
+                    <div class="impact">
+
+                        <a href="">Advantages</a>
+                        <!--TODO: create page-->
+                    </div>
+                </li>
+
     <nav class="navbar">
         <a href="#home">Home</a>
         <div class="dropdown">
@@ -38,10 +90,17 @@
     </nav>
 
     <!----Content---->
-    <!--TODO: Add Javascript to slideshow multiple images-->
     <!-- slideshow div containing all the slides -->
+
     <div class="slideContainer">
-        <!-- acutal slide containing the image and text -->
+        <!-- TODO: Add Booking System (Dummy) -->
+        <form class="bookingContainer" action="\">
+            <h1>Booking</h1>
+            <input type="search" name="place" class="form" placeholder="Enter City">
+            <input type="search" name="place" class="form" placeholder="Enter Dates">
+            <button class="submit" type="submit"> <strong>Book</strong> </button>
+        </form>
+        <!-- actual slide containing the image and text -->
         <div class="slides">
             <img src="images/SardegnaWallpaper.jpg" alt="Nature">
 
@@ -258,10 +317,7 @@
         <h1>Beaches</h1>
         <div class="content">
             <img src="images/Spiaggia Sardegna.jpg" alt="">
-            <p>something about that sdjg;
-                ldksflg;ladkvlsvmklsdfvmklsvmkldsmkmvkljdfs;ljfvklsdcv
-                mldmfs;avmdflskvmdfklgjkdlfvmkfldvkmdfklbmdklfmfklbm
-                asdasdasdasdadl;</p>
+            <p>something about that sdjg</p>
         </div>
 
 
@@ -270,10 +326,7 @@
     <div class="mountains">
         <h1>Mountains</h1>
         <div class="content">
-            <p>something about that sdjg;
-                ldksflg;ladkvlsvmklsdfvmklsvmkldsmkmvkljdfs;ljfvklsdcv
-                mldmfs;avmdflskvmdfklgjkdlfvmkfldvkmdfklbmdklfmfklbm
-                asdasdasdasdadl;</p>
+            <p>something about that sdjg</p>
             <img src="https://source.unsplash.com/1600x900/?mountain" alt="">
 
         </div>
@@ -282,13 +335,9 @@
             <h1>Countryside</h1>
             <div class="content">
                 <img src="images/Campagna Sardegna.jpg" alt="">
-                <p>something about that sdjg;
-                    ldksflg;ladkvlsvmklsdfvmklsvmkldsmkmvkljdfs;ljfvklsdcv
-                    mldmfs;avmdflskvmdfklgjkdlfvmkfldvkmdfklbmdklfmfklbm
-                    asdasdasdasdadl;</p>
+                <p>something about that </p>
             </div>
 
-            <!--TODO: Link Javascript-->
             <script src="script.js"></script>
 
 </body>
@@ -330,7 +379,7 @@
             <h1>Developer</h1>
             <!-- A Github link to the repository where all the steps of the website can be tracked, from start to finish -->
             <p>This Website source code will be entirely available in Github, for resources and contributions</p>
-            <a href="">Github Repository</a>
+            <a href="https://github.com/AthlonsDev/Staycation_Website">Github Repository</a>
 
         </div>
 
