@@ -4,11 +4,13 @@
 
 /*NavBar*/
 .navbar {
-    background-color: red;
+    background-color: blue;
     z-index: 2;
     position: sticky;
     top: 0;
+    display: inline-flex;
 }
+
 
 .navbar a {
     float: left;
@@ -20,16 +22,17 @@
 
 .dropdown {
     float: right;
-    overflow: hidden;
+    
 }
 
 .dropdown .dropbtn {
     border: none;
     outline: none;
     padding: 14px 22px;
-    background-color: red;
     margin: 0;
     font-size: 22;
+    background-color: inherit;
+    color: white;
 }
 
 
@@ -70,7 +73,7 @@
 /*SlideShow*/
 .slideContainer {
     box-sizing: border-box;
-    top: 0%;
+    top: -10%;
     height: 100%;
     width: 100%;
     position: relative;
