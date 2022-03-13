@@ -18,7 +18,7 @@
             <button class="dropbtn" id="cities">Cities
             </button>
             <div class="dropdown-content">
-                <a href="Cagliari.html">Cagliari</a>
+                <a href="cities/Cagliari.html">Cagliari</a>
                 <a href="Alghero.html">Alghero</a>
                 <a href="Sassari.html">Sassari</a>
                 <a href="Olbia.html">Olbia</a>
@@ -38,55 +38,28 @@
     <!----Content---->
     <!-- slideshow div containing all the slides -->
 
-    <div class="slideContainer">
-        <!-- TODO: Add Booking System (Dummy) -->
-        <form class="bookingContainer" action="\">
-            <h1>Booking</h1>
-            <input type="search" name="place" class="form" placeholder="Enter City">
-            <input type="search" name="place" class="form" placeholder="Enter Dates">
-            <button class="submit" type="submit"> <strong>Book</strong> </button>
-        </form>
-        <!-- actual slide containing the image and text -->
-        <div class="slides">
-            <img src="images/SardegnaWallpaper.jpg" alt="Nature">
-
-            <div class="caption">
-
-                <h2>
-                    Title of the Region or Landmark
-                </h2>
-
-
-            </div>
-
-
+    <section>
+        <div class="slideContainer" dataContainer>
+          <button class="slideBbutton prev" dataButton="prev">&#8656;</button>
+          <button class="slideBbutton next" dataButton="next">&#8658;</button>
+          <h1 class="banner"> Staycation Sardinia</h1>
+          <h2 class="subTitle">Explore The Local Wonders Of The Island</h2>
+          <ul dataSlides>
+            <li class="slide" data-active>
+                
+              <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #1">
+            </li>
+            <li class="slide">
+              <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
+            </li>
+            <li class="slide">
+              <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
+            </li>
+          </ul>
         </div>
+        
+      </section>
 
-        <!-- <div class="slides">
-            <img src="images/Campagna Sardegna.jpg" alt="Nature">
-
-            <div class="caption">
-
-                <h2>
-                    Second Title of the Region or Landmark
-                </h2>
-
-
-            </div> 
-
-
-        </div> -->
-        <!-- Dots created with simple text aligned to the center -->
-        <div class="dots" style="text-align: center;">
-            <!-- clicking on the dots changes the slide image and text -->
-            <span class="dot" onclick="currentslide(1)"></span>
-            <span class="dot" onclick="currentslide(2)"></span>
-            <span class="dot" onclick="currentslide(3)"></span>
-        </div>
-        <!-- same concept of the dots but with back and forward arrows -->
-        <a href="" class="prev"> <strong>&#10094;</strong> </a>
-        <a href="" class="next"> <strong>&#10095;</strong> </a>
-    </div>
 
 
 

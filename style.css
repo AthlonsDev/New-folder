@@ -4,8 +4,8 @@
 
 /*NavBar*/
 .navbar {
-    background-color: blue;
-    z-index: 2;
+    background-color: rgba(214, 50, 0, 0.699);
+    z-index: 10;
     position: sticky;
     top: 0;
     display: inline-flex;
@@ -71,151 +71,97 @@
 /*Content*/
 
 
+
+
 /*SlideShow*/
 .slideContainer {
-    box-sizing: border-box;
-    top: -10%;
-    height: 100%;
     width: 100%;
+    height: 100%;
     position: relative;
-    margin: auto;
-    z-index: 2;
-}
+    top: -60;
+  }
 
-.bookingContainer {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 50%;
-    height: 20%;
-    margin-top: 10%;
-    margin-left: 25%;
+  .slideContainer .banner {
+      font-size: 66;
+      z-index: 10;
+      position: absolute;
+      margin-left: 35%;
+      margin-top: 15%;
+      color: #fff;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+      object-position: 50% 50%;
+  }
+  .slideContainer .subTitle {
+    font-size: 44;
+    z-index: 10;
     position: absolute;
-
+    margin-left: 30%;
+    margin-top: 20%;
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    object-position: 50% 50%;
 }
-
-.bookingContainer h1 {
-    margin-left: 40%;
-}
-
-.bookingContainer .form {
-    height: 20%;
-    margin-left: 2%;
-    margin-top: 5%;
-    border-width: 0;
-    width: 30%;
-}
-
-.bookingContainer  .submit {
-    margin-left: 5%;
-    width: 20%;
-    height: 20%;
-    border-width: 0;
-    background-color: red;
-    font-size: 24;
-    font-style: italic;
-    cursor: pointer;
-}
-
-
-
-
-
-.slides {
+  
+  .slideContainer > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 800ms opacity ease-in-out;
+    transition-delay: 50ms;
+  }
+  
+  .slide > img {
     display: block;
-}
-
-.slides .caption {
-    top: 50%;
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin-left: 40%;
-}
-
-.caption h2 {
-    text-align: center;
-}
-
-
-.slides img {
-    height: 100%;
     width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    object-position: center;
+  }
+  
+  .slide[data-active] {
+    opacity: 1;
     z-index: 1;
-}
-
-.active {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-/*next and previous buttons*/
-.prev,
-.next {
-
-    cursor: pointer;
+    transition-delay: 0ms;
+  }
+  
+  .slideBbutton {
     position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -20px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 32px;
-    border-radius: 0 3px 3px 0;
-    text-decoration: none;
-
-}
-
-
-/*Bullets*/
-.dots {
-    width: auto;
-    height: auto;
-    margin-top: -2%;
     z-index: 2;
-}
-
-.dot {
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  
+  .slideBbutton:hover,
+  .slideBbutton:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+  }
+  
+  .slideBbutton:focus {
+    outline: 1px solid black;
+  }
+  
+  .slideBbutton.prev {
+    left: 1rem;
+  }
+  
+  .slideBbutton.next {
+    right: 1rem;
+  }
 
 .learnMore {
     margin-top: -5%;
@@ -564,13 +510,12 @@
     }
 
 
-    .slideContainer {
-        height: auto;
+    .slideContainer .subTitle{
+
+        margin-top: 50%;
+
     }
 
-    .slides .caption {
-        margin-left: 15%;
-    }
 
     .container {
         grid-template-columns: repeat(1, 1fr);
