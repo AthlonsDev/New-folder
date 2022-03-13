@@ -25,6 +25,16 @@
     
 }
 
+.navbar a {
+    border: none;
+    outline: none;
+    padding: 14px 22px;
+    margin: 0;
+    font-size: 22;
+    background-color: inherit;
+    color: white;
+}
+
 .dropdown .dropbtn {
     border: none;
     outline: none;
@@ -59,7 +69,8 @@
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: rgb(136, 0, 0);
+    color: white;
 }
 
 .dropdown:hover .dropdown-content {
@@ -187,10 +198,6 @@
 
 /*Locations*/
 
-.locations {
-    /* background-color: rgb(255, 255, 241); */
-}
-
 .locations h1 {
     padding: 2%;
     margin-left: 40%;
@@ -202,6 +209,8 @@
     padding: 8px 12px;
     position: absolute;
     margin-top: 15%;
+
+
     margin-left: 24%;
     text-align: center;
 }
@@ -243,11 +252,6 @@
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
-
-.gallery-item:hover .image img {
-    /*transform: scale(1.1);*/
-}
-
 
 .gallery-item .titleText {
 
