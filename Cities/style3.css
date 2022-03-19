@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+}
+
+/*NavBar*/
+.navbar {
+    background-color: rgba(214, 50, 0, 0.699);
+    z-index: 10;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display:inline-block;
+}
+
+
+.navbar a {
+    float: left;
+    font-size: 18;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.dropdown {
+    float: right;
+}
+
+.navbar a {
+    border: none;
+    outline: none;
+    padding: 14px 22px;
+    margin: 0;
+    font-size: 22;
+    background-color: inherit;
+    color: white;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    padding: 14px 50px;
+    margin: 0;
+    font-size: 22;
+    background-color: inherit;
+    color: white;
+    
+}
+
+
+/* .navbar a:hover, .dropdown:hover .dropbtn {
+    color: ;
+  } */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(136, 0, 0);
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/*Content*/
+
+
+
+
+/*SlideShow*/
+.slideContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -60;
+}
+
+.slideContainer .banner {
+    font-size: 66;
+    z-index: 10;
+    position: absolute;
+    margin-left: 36%;
+    margin-top: 15%;
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    object-position: 50% 50%;
+}
+
+.slideContainer .subTitle {
+    font-size: 44;
+    z-index: 10;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 20%;
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    object-position: 50% 50%;
+}
+
+.slideContainer>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 800ms opacity ease-in-out;
+    transition-delay: 50ms;
+
+}
+
+.slide>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.slideBbutton {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.slideBbutton:hover,
+.slideBbutton:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.slideBbutton:focus {
+    outline: 1px solid black;
+}
+
+.slideBbutton.prev {
+    left: 1rem;
+}
+
+.slideBbutton.next {
+    right: 1rem;
+}
+
+/*Locations*/
+
+.locations h1 {
+    padding: 2%;
+    margin-left: 40%;
+}
+
+.caption {
+
+    color: #fff;
+    padding: 8px 12px;
+    position: absolute;
+    margin-top: 15%;
+
+
+    margin-left: 24%;
+    text-align: center;
+}
+
+.caption p {
+    font-size: 32;
+    margin-left: 20%;
+}
+
+/*Content Grid*/
+
+.container {
+    margin-left: 5%;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px 300px;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-item .images {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*when resizing page images will stay focuse on the center, not top left*/
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.gallery-item .titleText {
+
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    /*Set actual position of title to center, it was off center with longer words*/
+    transform: translate(-50%, 50%);
+    color: #fff;
+    font-size: 25px;
+    /*Cant receive pointers events*/
+    pointer-events: none;
+    transition: .3s ease-in-out;
+
+}
+
+.gallery-item:hover .titleText {
+    opacity: 1;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    /* animation: move-down .3s linear;
+    padding: 1em;
+    width: 100%;*/
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    cursor: pointer;
+}
+
+.gallery-item:hover .overlay {
+    opacity: .5;
+}
+
+.places {
+    display: flex;
+}
+
+.mainPlace {
+    margin-left: 2%;
+}
+
+.mainPlace .image img {
+    width: 90%;
+    height: 70%;
+
+}
+
+.mainPlace .description {
+    background: rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 30%;
+}
+
+.coast {
+    margin-top: 5%;
+    width: 100%;
+    height: 50%;
+}
+
+.coast h1 {
+    margin-left: 50%;
+    margin-bottom: 2%;
+}
+
+.coast .content {
+    margin-left: 2%;
+    display: flex;
+}
+
+.coast .content p {
+
+    margin-left: 10%;
+    width: 25%;
+    font-size: 22;
+    height: auto;
+    text-align: center;
+
+}
+
+.coast .content img {
+
+    max-width: 50%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+
+}
+
+.mountains {
+
+    margin-top: 0%;
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 128, 0, 0.185);
+
+}
+
+.mountains h1 {
+    margin-left: 50%;
+    margin-bottom: 2%;
+}
+
+.mountains .content {
+    margin-left: 2%;
+    display: flex;
+}
+
+.mountains .content p {
+    width: 25%;
+    font-size: 22;
+    height: auto;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.mountains .content img {
+    max-width: 50%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+    margin-left: 10%;
+    float: right;
+
+}
+
+.countryside {
+    margin-top: 5%;
+    width: 100%;
+    height: 50%;
+
+}
+
+.countryside h1 {
+    margin-left: 50%;
+    margin-bottom: 2%;
+}
+
+.countryside .content {
+    margin-left: 2%;
+    display: flex;
+}
+
+.countryside .content p {
+    margin-left: 10%;
+    width: 25%;
+    font-size: 22;
+    height: auto;
+    text-align: center;
+
+}
+
+.countryside .content img {
+    margin-left: 0;
+    max-width: 50%;
+    max-height: 75%;
+    width: auto;
+    height: auto;
+}
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    background-color: rgb(211, 211, 211);
+    margin-top: 5%;
+}
+
+.links {
+    display: grid;
+    margin: 2%;
+}
+
+.links h1 {
+    font-size: 22;
+    margin-bottom: 1%;
+    line-height: 1;
+}
+
+.links a {
+    padding: 0.5%;
+    text-decoration: none;
+    font-size: 16;
+    color: black;
+    width: 10%;
+}
+
+.social {
+    display: grid;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.social a {
+    padding: 0.5%;
+    text-decoration: none;
+    font-size: 16;
+    color: black;
+    width: 10%;
+}
+
+.social h1 {
+    font-size: 22;
+    margin-bottom: 1%;
+}
+
+.developers {
+    display: grid;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    color: black;
+    width: 10%;
+    margin-left: 60%;
+}
+
+.developers p {
+    font-size: 18;
+    font-weight: bold;
+}
+
+.developers a {
+    padding: 0.5%;
+    text-decoration: none;
+    font-size: 18;
+    color: black;
+    width: 10%;
+}
+
+.developers h1 {
+    font-size: 26;
+    margin-bottom: 1%;
+}
+
+
+
+
+
+/* Responsive Layout */
+
+/* For tablets: */
+@media only screen and (max-width: 1000px) {
+
+    .item {
+        display: none;
+    }
+
+    .menuIcon img {
+        display: block;
+    }
+
+
+    .slideContainer .subTitle {
+
+        margin-top: 50%;
+
+    }
+
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 100px 150px;
+    }
+
+    .mainPlace .image img {
+        height: auto;
+    }
+
+
+    .footer .developers {
+        margin-left: 30%;
+    }
+
+
+
+
+}
