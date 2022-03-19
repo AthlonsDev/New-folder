@@ -1,7 +1,21 @@
 * {
     margin: 0;
+    
 }
 
+body {
+    background-color: white;
+    color: black;
+}
+
+.darkMode {
+    background-color: rgb(3, 0, 19);
+    color: white;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
 /*NavBar*/
 .navbar {
     background-color: rgba(214, 50, 0, 0.699);
@@ -25,7 +39,7 @@
 .dropdown {
     float: right;
 }
-
+/* navbar */
 .navbar a {
     border: none;
     outline: none;
@@ -80,327 +94,137 @@
 }
 
 
-
-/*Content*/
-
-
-
-
-/*SlideShow*/
-.slideContainer {
+/* Cover */
+.cover {
+    position: relative;
     width: 100%;
     height: 100%;
-    position: relative;
     top: -60;
+    /* Parallax Effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/Nuoro_1.jpg");
 }
 
-.slideContainer .banner {
-    font-size: 66;
-    z-index: 10;
+.cover button {
     position: absolute;
-    margin-left: 36%;
-    margin-top: 15%;
-    color: #fff;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-    object-position: 50% 50%;
-}
+    margin-top: 25%;
+    margin-left: 46%;
+    padding: 15px 40px;
+    text-decoration: none;
+    background-color: red;
+    border-style: none;
+    border-radius: 12px;
+} 
 
-.slideContainer .subTitle {
-    font-size: 44;
-    z-index: 10;
-    position: absolute;
-    margin-left: 30%;
-    margin-top: 20%;
-    color: #fff;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-    object-position: 50% 50%;
-}
+.cover a {
 
-.slideContainer>ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.slide {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: 800ms opacity ease-in-out;
-    transition-delay: 50ms;
-
-}
-
-.slide>img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    /* object-fit: cover; */
-    object-position: center;
-}
-
-.slide[data-active] {
-    opacity: 1;
-    z-index: 1;
-    transition-delay: 0ms;
-}
-
-.slideBbutton {
-    position: absolute;
-    z-index: 2;
-    background: none;
-    border: none;
-    font-size: 4rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, .5);
-    cursor: pointer;
-    border-radius: .25rem;
-    padding: 0 .5rem;
-    background-color: rgba(0, 0, 0, .1);
-}
-
-.slideBbutton:hover,
-.slideBbutton:focus {
     color: white;
-    background-color: rgba(0, 0, 0, .2);
+    text-decoration: none;
+    font-size: 22;
+    appearance: button;
 }
 
-.slideBbutton:focus {
-    outline: 1px solid black;
-}
-
-.slideBbutton.prev {
-    left: 1rem;
-}
-
-.slideBbutton.next {
-    right: 1rem;
-}
-
-/*Locations*/
-
-.locations h1 {
-    padding: 2%;
-    margin-left: 40%;
-}
-
-.caption {
-
-    color: #fff;
-    padding: 8px 12px;
+.cover h1 {
     position: absolute;
+    margin-left: 47%;
     margin-top: 15%;
-
-
-    margin-left: 24%;
-    text-align: center;
-}
-
-.caption p {
-    font-size: 32;
-    margin-left: 20%;
-}
-
-/*Content Grid*/
-
-.container {
-    margin-left: 5%;
-    width: 75%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 200px 300px;
-    gap: 20px;
-}
-
-.gallery-item {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.gallery-item .images {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.gallery-item .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /*when resizing page images will stay focuse on the center, not top left*/
-    object-position: 50% 50%;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-
-.gallery-item .titleText {
-
-    opacity: 0;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    /*Set actual position of title to center, it was off center with longer words*/
-    transform: translate(-50%, 50%);
-    color: #fff;
-    font-size: 25px;
-    /*Cant receive pointers events*/
-    pointer-events: none;
-    transition: .3s ease-in-out;
-
-}
-
-.gallery-item:hover .titleText {
-    opacity: 1;
+    color: white;
+    font-size: 66;
+    object-position: 50%, 50%;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-    /* animation: move-down .3s linear;
-    padding: 1em;
-    width: 100%;*/
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.history {
+    position: relative;
     height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-    cursor: pointer;
+   
 }
 
-.gallery-item:hover .overlay {
-    opacity: .5;
-}
-
-.places {
-    display: flex;
-}
-
-.mainPlace {
-    margin-left: 2%;
-}
-
-.mainPlace .image img {
-    width: 90%;
-    height: 70%;
+.history h1 {
+    font-size: 56;
+    margin-left: 45%;
 
 }
 
-.mainPlace .description {
-    background: rgba(0, 0, 0, 0.2);
-    width: 90%;
-    height: 30%;
+.history h3 {
+    position: relative;
+    margin-left: 35%;
+    
+    margin-right: 20%;
+    
+
 }
 
-.coast {
+.history button {
+
+    position: relative;
     margin-top: 5%;
-    width: 100%;
-    height: 50%;
-}
-
-.coast h1 {
     margin-left: 50%;
-    margin-bottom: 2%;
 }
 
-.coast .content {
-    margin-left: 2%;
-    display: flex;
-}
-
-.coast .content p {
-
-    margin-left: 10%;
-    width: 25%;
-    font-size: 22;
-    height: auto;
-    text-align: center;
-
-}
-
-.coast .content img {
-
-    max-width: 50%;
-    max-height: 50%;
-    width: auto;
-    height: auto;
-
-}
-
-.mountains {
-
-    margin-top: 0%;
-    width: 100%;
-    height: 50%;
-    background: rgba(0, 128, 0, 0.185);
-
-}
-
-.mountains h1 {
-    margin-left: 50%;
-    margin-bottom: 2%;
-}
-
-.mountains .content {
-    margin-left: 2%;
-    display: flex;
-}
-
-.mountains .content p {
-    width: 25%;
-    font-size: 22;
-    height: auto;
-    text-align: center;
-    margin-left: 10%;
-}
-
-.mountains .content img {
-    max-width: 50%;
-    max-height: 50%;
-    width: auto;
-    height: auto;
-    margin-left: 10%;
-    float: right;
-
-}
-
-.countryside {
+.history #firstParagraph {
     margin-top: 5%;
-    width: 100%;
-    height: 50%;
-
 }
 
-.countryside h1 {
-    margin-left: 50%;
-    margin-bottom: 2%;
-}
 
-.countryside .content {
-    margin-left: 2%;
-    display: flex;
-}
 
-.countryside .content p {
-    margin-left: 10%;
+.history img {
+    position: absolute;
     width: 25%;
-    font-size: 22;
-    height: auto;
-    text-align: center;
-
+    margin-left: 2%;
+    margin-top: -25%;
 }
 
-.countryside .content img {
-    margin-left: 0;
-    max-width: 50%;
-    max-height: 75%;
-    width: auto;
-    height: auto;
+.Attractions h1{
+    font-size: 56;
+    margin-left: 42%;
+    
+}
+
+.Attractions h2 {
+    margin-top: 3%;
+    font-size: 36;
+}
+
+.Attractions h3 {
+    margin-top: 3%;
+}
+
+.Attractions h4 {
+    margin-top: 3%;
+}
+
+.gridContainer {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    gap: 30px;
+}
+
+.grid-item {
+    background-color: rgba(156, 0, 0, 0.2);
+    border: 0.1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: left;
+}
+
+.grid-item button {
+    margin-top: 25%;
+    margin-left: 25%;
+    padding: 15px 40px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border-style: none;
+    border-radius: 12px;
+    
+}
+
+.grid-item img {
+    width: 400px;
 }
 
 /*Footer*/
@@ -478,46 +302,55 @@
     margin-bottom: 1%;
 }
 
-
-
-
-
 /* Responsive Layout */
 
-/* For tablets: */
+/* For tablets/Laptops: */
 @media only screen and (max-width: 1000px) {
 
-    .item {
-        display: none;
+    .cover h1 {
+        margin-top: 40%;
+    }
+    .cover button {
+        margin-top: 60%;
     }
 
-    .menuIcon img {
-        display: block;
+    .history img {
+        margin-top: -80%;
     }
 
+    .gridContainer {
+        grid-template-columns: auto auto;
+    }
+    .history h3 {
+        font-size: 15;
+    }
+}
 
-    .slideContainer .subTitle {
+@media only screen and (max-width: 900px) {
 
-        margin-top: 50%;
-
+    .cover h1 {
+        margin-top: 40%;
+    }
+    .cover button {
+        margin-top: 70%;
     }
 
-
-    .container {
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: 100px 150px;
+    .history img {
+        margin-top: -80%;
     }
 
-    .mainPlace .image img {
-        height: auto;
+    .gridContainer {
+        grid-template-columns: auto ;
+    }
+    .grid-item img {
+        width: 600px;
+    }
+    .history h3 {
+        font-size: 15;
     }
 
-
-    .footer .developers {
-        margin-left: 30%;
+    .developers {
+        margin-left: 35%;
     }
-
-
-
 
 }

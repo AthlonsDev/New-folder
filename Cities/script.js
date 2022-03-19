@@ -1,20 +1,19 @@
-// Slideshow Controller
-// Shows slides with timer
-var sliderIndex = 0;
-showSlides();
 
+function showMoreText() {
+    var dots = document.getElementById("dots");
+    var more = document.getElementById("more");
+    var showBtn = document.getElementById("show");
 
+    if (dots.style.display === "none") {
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("slides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
+        dots.style.display = "block";
+        showBtn.innerHTML = "Read More";
+        more.style.display = "none";
+
     }
-    sliderIndex++;
-    if (sliderIndex > slides.length) {
-        sliderIndex = 1
+    else {
+        dots.style.display = "none";
+        showBtn.innerHTML = "Read less";
+        more.style.display = "block";
     }
-    slides[sliderIndex-1].style.display = "block"
-    setTimeout(showSlides, 3000);
 }

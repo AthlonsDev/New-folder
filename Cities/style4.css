@@ -105,7 +105,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../images/Nuoro_1.jpg");
+    background-image: url("../images/Maddalena_1.jpg");
 }
 
 .cover button {
@@ -129,7 +129,7 @@ html {
 
 .cover h1 {
     position: absolute;
-    margin-left: 47%;
+    margin-left: 32%;
     margin-top: 15%;
     color: white;
     font-size: 66;
@@ -152,11 +152,24 @@ html {
 .history h3 {
     position: relative;
     margin-left: 35%;
-    margin-top: 5%;
+    
     margin-right: 20%;
     
 
 }
+
+.history button {
+
+    position: relative;
+    margin-top: 5%;
+    margin-left: 50%;
+}
+
+.history #firstParagraph {
+    margin-top: 5%;
+}
+
+
 
 .history img {
     position: absolute;
@@ -308,9 +321,37 @@ html {
     .gridContainer {
         grid-template-columns: auto auto;
     }
-
+    .history h3 {
+        font-size: 15;
+    }
 }
 
+@media only screen and (max-width: 900px) {
 
+    .cover h1 {
+        margin-top: 40%;
+    }
+    .cover button {
+        margin-top: 70%;
+    }
 
+    .history img {
+        margin-top: -80%;
+    }
+
+    .gridContainer {
+        grid-template-columns: auto ;
+    }
+    .grid-item img {
+        width: 600px;
+    }
+    .history h3 {
+        font-size: 15;
+    }
+
+    .developers {
+        margin-left: 35%;
+    }
+
+}
 
