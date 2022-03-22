@@ -341,3 +341,31 @@ html {
     }
 
 }
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+    
+    
+    .cover h1 {
+        margin-left: 42%;
+    }
+
+    .cover button {
+        margin-left: 42%;
+    }
+
+
+    .history img {
+
+        margin-top: -30%;
+        margin-left: 5%;
+        
+    }
+
+    .gridContainer {
+        grid-template-columns: auto auto;
+    }
+    
+    .grid-item img {
+        width: 600px;
+    }
+}
