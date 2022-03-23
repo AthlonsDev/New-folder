@@ -105,8 +105,10 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../images/Cagliari_2.jpg");
+    /* Image is dynamically changed by the script depending on the title */
 }
+
+
 
 .cover button {
     position: absolute;
@@ -162,7 +164,7 @@ html {
     position: absolute;
     width: 25%;
     margin-left: 2%;
-    margin-top: -15%;
+    margin-top: -20%;
 }
 
 .Attractions h1{
@@ -342,7 +344,7 @@ html {
 
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1920px) {
+@media screen and (min-width: 1200px) and (max-width: 1820px) {
     
     
     .cover h1 {
