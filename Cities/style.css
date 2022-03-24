@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    
+
 }
 
 body {
@@ -11,11 +11,12 @@ body {
 .darkMode {
     background-color: rgb(3, 0, 19);
     color: white;
-  }
+}
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
 /*NavBar*/
 .navbar {
     background-color: rgba(214, 50, 0, 0.699);
@@ -23,7 +24,7 @@ html {
     width: 100%;
     position: sticky;
     top: 0;
-    display:inline-block;
+    display: inline-block;
 }
 
 
@@ -33,12 +34,13 @@ html {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
+
 }
 
 .dropdown {
     float: right;
 }
+
 /* navbar */
 .navbar a {
     border: none;
@@ -58,7 +60,7 @@ html {
     font-size: 22;
     background-color: inherit;
     color: white;
-    
+
 }
 
 
@@ -119,7 +121,10 @@ html {
     background-color: red;
     border-style: none;
     border-radius: 12px;
-} 
+    color: white;
+    font-size: 24;
+    cursor: pointer;
+}
 
 .cover a {
 
@@ -142,7 +147,7 @@ html {
 .history {
     position: relative;
     height: 100%;
-   
+
 }
 
 .history h1 {
@@ -156,7 +161,7 @@ html {
     margin-left: 35%;
     margin-top: 5%;
     margin-right: 20%;
-    
+
 
 }
 
@@ -167,10 +172,10 @@ html {
     margin-top: -20%;
 }
 
-.Attractions h1{
+.Attractions h1 {
     font-size: 56;
     margin-left: 42%;
-    
+
 }
 
 .Attractions h2 {
@@ -209,12 +214,15 @@ html {
     background-color: rgb(255, 255, 255);
     border-style: none;
     border-radius: 12px;
-    
+    cursor: pointer;
+
 }
 
 .grid-item img {
     width: 400px;
 }
+
+
 
 /*Footer*/
 
@@ -299,6 +307,7 @@ html {
     .cover h1 {
         margin-top: 40%;
     }
+
     .cover button {
         margin-top: 60%;
     }
@@ -310,6 +319,7 @@ html {
     .gridContainer {
         grid-template-columns: auto auto;
     }
+
     .history h3 {
         font-size: 15;
     }
@@ -320,6 +330,7 @@ html {
     .cover h1 {
         margin-top: 40%;
     }
+
     .cover button {
         margin-top: 70%;
     }
@@ -329,11 +340,13 @@ html {
     }
 
     .gridContainer {
-        grid-template-columns: auto ;
+        grid-template-columns: auto;
     }
+
     .grid-item img {
         width: 600px;
     }
+
     .history h3 {
         font-size: 15;
     }
@@ -345,8 +358,8 @@ html {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1820px) {
-    
-    
+
+
     .cover h1 {
         margin-left: 42%;
     }
@@ -360,13 +373,13 @@ html {
 
         margin-top: -30%;
         margin-left: 5%;
-        
+
     }
 
     .gridContainer {
         grid-template-columns: auto auto;
     }
-    
+
     .grid-item img {
         width: 600px;
     }
