@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    
+
 }
 
 body {
@@ -11,11 +11,12 @@ body {
 .darkMode {
     background-color: rgb(3, 0, 19);
     color: white;
-  }
+}
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
 /*NavBar*/
 .navbar {
     background-color: rgba(214, 50, 0, 0.699);
@@ -23,7 +24,7 @@ html {
     width: 100%;
     position: sticky;
     top: 0;
-    display:inline-block;
+    display: inline-block;
 }
 
 
@@ -33,12 +34,13 @@ html {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
+
 }
 
 .dropdown {
     float: right;
 }
+
 /* navbar */
 .navbar a {
     border: none;
@@ -58,7 +60,7 @@ html {
     font-size: 22;
     background-color: inherit;
     color: white;
-    
+
 }
 
 
@@ -121,7 +123,7 @@ html {
     color: white;
     font-size: 24;
     cursor: pointer;
-} 
+}
 
 .cover a {
 
@@ -142,58 +144,45 @@ html {
 }
 
 
-.Attractions h1{
+.Bookings h1 {
     font-size: 56;
     margin-left: 42%;
-    
+
 }
 
-.Attractions h2 {
+.Bookings h2 {
     margin-top: 3%;
     font-size: 36;
 }
 
-.Attractions h3 {
+.Bookings h3 {
     margin-top: 3%;
 }
 
-.Attractions h4 {
+.Bookings h4 {
     margin-top: 3%;
 }
 
 .gridContainer {
     display: grid;
     column-gap: 50px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 450px 450px 450px 450px;
+    /* grid-template-rows: auto auto auto; */
     padding: 10px;
     gap: 30px;
 }
 
-.subgridContainer {
-   display: flex;
-   float: right;
-   margin-top: -45%;
-   margin-right: 15%;
-}
-
-.subgridContainer h2 {
-    float: right;
-    position: absolute;
-    margin-top: -3%;
-    margin-left: -5%;
-}
 
 .grid-item {
-    background-color: rgba(156, 0, 0, 0.2);
-    border: 0.1px solid rgba(0, 0, 0, 0.2);
+    background-color: #ffcccc;
+    border: 0;
     padding: 20px;
     text-align: left;
 }
 
-.sub-grid-item button {
-    /* margin-top: -60%;
-    margin-left: 70%; */
+
+
+.grid-item button {
     padding: 15px 40px;
     margin-top: 5%;
     text-decoration: none;
@@ -201,16 +190,173 @@ html {
     border-style: none;
     border-radius: 12px;
     color: #f9f9f9;
-    float: right;
-    display: flex;
-    
+
 }
 
 .grid-item img {
     width: 400px;
 }
 
+/*Footer*/
 
+.footer {
+    display: flex;
+    background-color: rgb(211, 211, 211);
+    margin-top: 5%;
+}
+
+.links {
+    display: grid;
+    margin: 2%;
+}
+
+.links h1 {
+    font-size: 22;
+    margin-bottom: 1%;
+    line-height: 1;
+}
+
+.links a {
+    padding: 0.5%;
+    text-decoration: none;
+    font-size: 16;
+    color: black;
+    width: 10%;
+}
+
+.social {
+    display: grid;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.social a {
+    padding: 0.5%;
+    text-decoration: none;
+    font-size: 16;
+    color: black;
+    width: 10%;
+}
+
+.social h1 {
+    font-size: 22;
+    margin-bottom: 1%;
+}
+
+.developers {
+    display: grid;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    color: black;
+    width: 10%;
+    margin-left: 60%;
+}
+
+.developers p {
+    font-size: 18;
+    font-weight: bold;
+}
+
+.developers a {
+    padding: 0.5%;
+    text-decoration: none;
+    font-size: 18;
+    color: black;
+    width: 10%;
+}
+
+.developers h1 {
+    font-size: 26;
+    margin-bottom: 1%;
+}
+
+/* Responsive Layout */
+
+/* For tablets/Laptops: */
+@media only screen and (max-width: 1000px) {
+
+    .cover h1 {
+        margin-top: 40%;
+    }
+
+    .cover button {
+        margin-top: 60%;
+    }
+
+    .history img {
+        margin-top: -80%;
+    }
+
+    .gridContainer {
+        grid-template-columns: auto auto;
+    }
+
+    .history h3 {
+        font-size: 15;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .cover h1 {
+        margin-top: 40%;
+    }
+
+    .cover button {
+        margin-top: 70%;
+    }
+
+    .history img {
+        margin-top: -80%;
+    }
+
+    .gridContainer {
+        grid-template-columns: auto;
+    }
+
+    .grid-item img {
+        width: 600px;
+    }
+
+    .history h3 {
+        font-size: 15;
+    }
+
+    .developers {
+        margin-left: 35%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1820px) {
+
+
+    .cover h1 {
+        margin-left: 42%;
+    }
+
+    .cover button {
+        margin-left: 42%;
+    }
+
+
+    .history img {
+
+        margin-top: -30%;
+        margin-left: 5%;
+
+    }
+
+    .gridContainer {
+        grid-template-columns: auto auto;
+    }
+
+    .grid-item img {
+        width: 600px;
+    }
+}
 
 
 
@@ -229,7 +375,7 @@ html {
 
 
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
-    
+
 
     .cover h1 {
         margin-left: 35%;
