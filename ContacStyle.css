@@ -11,7 +11,7 @@ body {
 
 .darkMode {
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 html {
@@ -122,40 +122,13 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-
-
-.cover button {
-    position: absolute;
-    margin-top: 25%;
-    margin-left: 43%;
-    padding: 15px 40px;
-    text-decoration: none;
-    background-color: rgb(207, 0, 0);
-    border-style: none;
-    border-radius: 12px;
-    color: white;
-    font-size: 24;
-    cursor: pointer;
-}
-
-.cover button:hover {
-    background-color: rgb(141, 0, 0);
-}
-
-.cover a {
-
-    color: white;
-    text-decoration: none;
-    font-size: 22;
-    appearance: button;
+    background-image: url("/images/Lungomare_Poetto_-_Cagliari.jpg");
 }
 
 .cover h1 {
     position: absolute;
-    margin-left: 35%;
-    margin-top: 15%;
+    margin-left: 42%;
+    margin-top: 2%;
     color: white;
     font-size: 66;
     object-position: 50%, 50%;
@@ -163,63 +136,61 @@ html {
 }
 
 
-.Bookings h1 {
-    font-size: 56;
-    margin-left: 42%;
 
+.form-container {
+    position: absolute;
+    border-radius: 5px;
+    background-color: #f2f2f28a;
+    /* padding: 20px; */
+    margin-left: 30%;
+    margin-top: 7%;
+    width: 40%;
+    height: 80%;
 }
 
-.Bookings h2 {
-    margin-top: 3%;
-    font-size: 36;
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* margin-left: 2%; */
 }
 
-.Bookings h3 {
-    margin-top: 3%;
-}
-
-.Bookings h4 {
-    margin-top: 3%;
-}
-
-.gridContainer {
-    display: grid;
-    column-gap: 50px;
-    grid-template-columns: 450px 450px 450px 450px;
-    /* grid-template-rows: auto auto auto; */
-    padding: 10px;
-    gap: 30px;
-}
-
-
-.grid-item {
-    background-color: #ffcccc;
-    border: 0;
-    padding: 20px;
-    text-align: left;
+.form label {
+    font-size: 22;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 
+.form input {
+    height: 5%;
+    border: none;
+}
 
-.grid-item button {
-    padding: 15px 40px;
-    margin-top: 5%;
-    text-decoration: none;
+.form select {
+    height: 5%;
+    border: none;
+
+}
+
+.form textarea {
+    height: 35%;
+    border: none;
+
+}
+
+.submit {
     background-color: rgb(207, 0, 0);
-    border-style: none;
-    border-radius: 12px;
-    color: #f9f9f9;
-    cursor: pointer;
-
+    color: white;
+    font-size: 22;
+    border: none;
 }
 
-.grid-item button:hover {
+.submit:hover {
     background-color: rgb(141, 0, 0);
 }
 
-.grid-item img {
-    width: 400px;
-}
 
 /*Footer*/
 
@@ -294,103 +265,4 @@ html {
 .developers h1 {
     font-size: 26;
     margin-bottom: 1%;
-}
-
-/* Responsive Layout */
-
-/* For tablets/Laptops: */
-@media only screen and (max-width: 1000px) {
-
-    .cover h1 {
-        margin-top: 40%;
-    }
-
-    .cover button {
-        margin-top: 60%;
-    }
-
-    .history img {
-        margin-top: -80%;
-    }
-
-    .gridContainer {
-        grid-template-columns: auto auto;
-    }
-
-    .history h3 {
-        font-size: 15;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-
-    .cover h1 {
-        margin-top: 40%;
-    }
-
-    .cover button {
-        margin-top: 70%;
-    }
-
-    .history img {
-        margin-top: -80%;
-    }
-
-    .gridContainer {
-        grid-template-columns: auto;
-    }
-
-    .grid-item img {
-        width: 600px;
-    }
-
-    .history h3 {
-        font-size: 15;
-    }
-
-    .developers {
-        margin-left: 35%;
-    }
-
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1820px) {
-
-
-    .cover h1 {
-        margin-left: 42%;
-    }
-
-    .cover button {
-        margin-left: 42%;
-    }
-
-
-    .history img {
-
-        margin-top: -30%;
-        margin-left: 5%;
-
-    }
-
-    .gridContainer {
-        grid-template-columns: auto auto;
-    }
-
-    .grid-item img {
-        width: 600px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1820px) {
-
-
-    .cover h1 {
-        margin-left: 35%;
-    }
-
-    .cover button {
-        margin-left: 46%;
-    }
-
 }

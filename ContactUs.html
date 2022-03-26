@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!--Link to CSS File-->
+    <link rel="stylesheet" href="ContacStyle.css">
+</head>
+
+
+<body>
+    <nav class="navbar" id="nav">
+        <a href="../index.html" id="logo">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn" id="cities">Cities
+            </button>
+            <div class="dropdown-content">
+                <a href="../cities/Cagliari.html">Cagliari</a>
+                <a href="../cities/Alghero.html">Alghero</a>
+                <a href="../cities/Nuoro.html">Nuoro</a>
+                <a href="../cities/Maddalena.html">La Maddalena</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="activities">Activities
+            </button>
+            <div class="dropdown-content">
+                <a href="../ThingsToDo/Beaches.html">Beach Going</a>
+                <a href="../ThingsToDo/Hiking.html">Hiking</a>
+                <a href="../ThingsToDo/Cultural.html">Cultural Sites</a>
+                <a href="../ThingsToDo/Events.html">Events</a>
+            </div>
+        </div>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="Environment.html">Environment</a>
+    </nav>
+
+
+    <!-- Content -->
+
+    <div class="cover" id="cover">
+        <h1>Contact Us</h1>
+        <!-- Contact Form -->
+        <div class="form-container">
+
+            <form action="" class="form">
+                <label for="name">First Name</label>
+                <input type="text" class="name" placeholder="Enter Name...">
+
+                <label for="name">Last Name</label>
+                <input type="text" class="name" placeholder="Enter Last Name...">
+
+                <label for="name">Email Address</label>
+                <input type="email" class="name" placeholder="Enter Email...">
+
+                <label for="Country">Select Country</label>
+                <select name="country" class="country">
+                    <option value="Italy">Italy</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="EU">European Union</option>
+                    <option value="US">United States</option>
+                </select>
+
+                <label for="Meassage">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"
+                    placeholder="Write Your Message Here..."></textarea>
+
+                <input type="submit" value="submit" class="submit">
+
+            </form>
+        </div>
+    </div>
+
+    <div class="dark-mode">
+        <button onclick="toggleDarkmode()" id="toggle" title="dark"><img src="../images/DarkMode.png" alt=""></button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+    <footer>
+        <!--TODO: Add links to pages, Social and Github-->
+        <div class="footer">
+
+            <!-- links to other path of the website, links that, i have found, are usually placed in the footer -->
+            <div class="links">
+
+                <h1>About Us</h1>
+
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Sitemap</a>
+                <a href="">Privacy</a>
+                <a href="">Accessibility</a>
+                <a href="">Terms and Conditions</a>
+                <a href="">Security</a>
+
+            </div>
+            <!-- Social links -->
+            <div class="social">
+
+                <h1>Follow Us</h1>
+
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Youtube</a>
+                <a href="">Instagram</a>
+                <a href="">LinkedIn</a>
+
+
+            </div>
+            <!-- This is usually found in open source projects, or companies that use their own API and things like that -->
+            <div class="developers">
+
+                <h1>Developer</h1>
+                <!-- A Github link to the repository where all the steps of the website can be tracked, from start to finish -->
+                <p>This Website source code will be entirely available in Github, for resources and contributions</p>
+                <a href="https://github.com/AthlonsDev/Staycation_Website">Github Repository</a>
+
+            </div>
+
+        </div>
+    </footer>
