@@ -49,3 +49,12 @@ function showMoreText() {
         more.style.display = "block";
     }
 }
+
+// DarkMode
+var togBtn = document.getElementById("toggle");
+
+
+function toggleDarkmode() {
+  var body = document.body;
+  body.classList.toggle("darkMode");
+}

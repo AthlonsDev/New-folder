@@ -3,13 +3,14 @@
 
 }
 
+
 body {
     background-color: white;
     color: black;
 }
 
 .darkMode {
-    background-color: rgb(3, 0, 19);
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
@@ -95,6 +96,21 @@ html {
     display: block;
 }
 
+/* Dark mode button */
+.dark-mode {
+    position: sticky;
+    top: 820;
+    margin-left: 1%;
+}
+
+.dark-mode button {
+    border-width: 0;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
 /* Cover */
 .cover {
     position: relative;
@@ -114,15 +130,19 @@ html {
 .cover button {
     position: absolute;
     margin-top: 25%;
-    margin-left: 46%;
+    margin-left: 43%;
     padding: 15px 40px;
     text-decoration: none;
-    background-color: red;
+    background-color: rgb(207, 0, 0);
     border-style: none;
     border-radius: 12px;
     color: white;
     font-size: 24;
     cursor: pointer;
+}
+
+.cover button:hover {
+    background-color: rgb(141, 0, 0);
 }
 
 .cover a {
@@ -135,7 +155,7 @@ html {
 
 .cover h1 {
     position: absolute;
-    margin-left: 32%;
+    margin-left: 35%;
     margin-top: 15%;
     color: white;
     font-size: 66;
@@ -190,7 +210,12 @@ html {
     border-style: none;
     border-radius: 12px;
     color: #f9f9f9;
+    cursor: pointer;
 
+}
+
+.grid-item button:hover {
+    background-color: rgb(141, 0, 0);
 }
 
 .grid-item img {
@@ -358,23 +383,7 @@ html {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1200px) and (max-width: 1920px) {
+@media screen and (min-width: 1200px) and (max-width: 1820px) {
 
 
     .cover h1 {

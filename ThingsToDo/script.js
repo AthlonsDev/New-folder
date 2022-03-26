@@ -27,3 +27,12 @@ if (document.title == "Events") {
     bookBtn.style.marginLeft = "40%";
 
 }
+
+// DarkMode
+var togBtn = document.getElementById("toggle");
+
+
+function toggleDarkmode() {
+  var body = document.body;
+  body.classList.toggle("darkMode");
+}
