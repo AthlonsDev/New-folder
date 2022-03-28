@@ -60,9 +60,24 @@ if (cities.nodeValue == "Alghero") {
 function validateForm(form) {
 
   if (form.name.value == "") {
-    alert("Invalid Entry");
-    document.getElementById("name").style.border = "1";
-    document.getElementById("name").style.borderColor = "Red";
+    alert("Invalid Name");
+    // document.getElementById("name").style.border = 1;
+    // document.getElementById("name").style.borderColor = "Red";
+
+  }
+
+  if (form.Lname.value == "") {
+    alert("Invalid Last Name");
+
+  }
+
+  if (form.Email.value == "") {
+    alert("Invalid Email");
+
+  }
+
+  if (form.message.value == "") {
+    alert("Invalid Message");
 
   }
   

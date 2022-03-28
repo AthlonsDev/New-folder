@@ -46,15 +46,15 @@
         <!-- Contact Form -->
         <div class="form-container">
 
-            <form name="contact" action="" class="form"  onclick="validateForm(this)">
-                <label for="name" id="name">First Name</label>
-                <input type="text" class="name" id="name" placeholder="Enter Name...">
+            <form name="contact" action="" class="form"">
+                <label for="name" >First Name</label>
+                <input type="text" class="name" id="name" name="name" placeholder="Enter Name...">
 
-                <label for="name">Last Name</label>
-                <input type="text" class="name" placeholder="Enter Last Name...">
+                <label for="Lname">Last Name</label>
+                <input type="text" class="Lname" name="Lname" placeholder="Enter Last Name...">
 
-                <label for="name">Email Address</label>
-                <input type="email" class="name" placeholder="Enter Email...">
+                <label for="Email">Email Address</label>
+                <input type="email" class="Email" name="Email" placeholder="Enter Email...">
 
                 <label for="Country">Select Country</label>
                 <select name="country" class="country">
@@ -69,7 +69,7 @@
                     placeholder="Write Your Message Here..."></textarea>
 
 
-                <input type="submit" value="submit" class="submit">
+                <input type="submit" value="submit" class="submit"  onclick="validateForm(this.form)">
 
             </form>
         </div>
