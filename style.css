@@ -200,12 +200,53 @@ body {
     right: 1rem;
 }
 
+.Booking {
+    z-index: 99;
+    top: 900;
+    position: sticky;
+    background-color: #aa0404;
+    width: 100%;
+    height: 80px;
+    
+}
+
+.Booking label {
+    color: white;
+    font-size: 22;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+.Booking #Date {
+    padding: 5px 8px;
+}
+
+.Booking #cities {
+    padding: 5px 8px;
+}
+
+.Booking #book {
+    background-color: rgb(139, 0, 0);
+    color: white;
+    font-size: 22;
+    border: none;
+    margin-left: 15%;
+    padding: 8px 18px;
+    cursor: pointer;
+}
+
+#book:hover {
+    color: rgb(139, 0, 0);
+    background-color: white;
+}
+
 /*Locations*/
 
 .locations h1 {
     padding: 2%;
     margin-left: 40%;
 }
+
 
 .caption {
 
@@ -397,6 +438,7 @@ padding: 20px;
 .links {
     display: grid;
     margin: 2%;
+    
 }
 
 .links h1 {

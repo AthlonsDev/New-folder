@@ -64,8 +64,8 @@
                     <img src="images/Cagliari_2.jpg" alt="">
                 </li>
             </ul>
-        </div>
 
+        </div>
     
     </section>
     </div>
@@ -74,6 +74,37 @@
         <button onclick="toggleDarkmode()" id="toggle" title="dark"><img src="images/DarkMode.png" alt=""></button>
         
     </div>
+
+    
+    <form class="Booking" id="book">
+        <label for="">From</label>
+        <input type="date" name="Date" id="Date">
+
+        <label for="">To</label>
+        <input type="date" name="Date" id="Date">
+
+        <label for="">City</label>
+        <select name="Cities" id="cities">
+            <option value="Italy">Cagliari</option>
+            <option value="UK">Alghero</option>
+            <option value="EU">Nuoro</option>
+            <option value="US">La Maddalena</option>
+        </select>
+
+        <!-- <label for="">Attraction</label>
+        <select name="Cities" class="cities">
+            <option value="Italy">Cagliari</option>
+            <option value="UK">Alghero</option>
+            <option value="EU">Nuoro</option>
+            <option value="US">La Maddalena</option>
+        </select> -->
+
+        <form id="bookBtn" action="cities/Alghero.html">
+            <button id="book">Book</button>
+        </form>
+        <!-- <input type="submit" value="submit" class="submit"> -->
+
+    </form>
 
     <!-- diving into the actual content of the website -->
     <div class="locations">
@@ -226,7 +257,6 @@
 
     </div>
 
-    <!--TODO: Add locations descriptions and link to pages-->
     <!-- sections to highlight key locations of the region -->
 
     <div class="thingsToDo" style="background-color:#cabbbb;">
@@ -250,7 +280,7 @@
         <div class="row">
             <div class="column3">
                 <h1 class="xlarge-font"><b>Mountains</b></h1>
-                <form action="/ThingsToDo/Beaches.html">
+                <form action="/ThingsToDo/Hiking.html">
                     <button class="button">Explore Sardinia's Inner Heart</button>
                 </form>
             </div>
@@ -263,9 +293,9 @@
     <div class="thingsToDo" style="background-color:#cabbbb;">
         <div class="row">
             <div class="column1">
-                <h1 class="xlarge-font"><b>Countryside</b></h1>
-                <form action="/ThingsToDo/Beaches.html">
-                    <button class="button">Explore Sardinia's Typical Countryside</button>
+                <h1 class="xlarge-font"><b>Culture</b></h1>
+                <form action="/ThingsToDo/Cultural.html">
+                    <button class="button">Explore Sardinia's Ancient Curltural Sites</button>
                 </form>
             </div>
             <div class="column2">
@@ -292,7 +322,6 @@
 
             <a href="">About Us</a>
             <a href="">Contact Us</a>
-            <a href="">Sitemap</a>
             <a href="">Privacy</a>
             <a href="">Accessibility</a>
             <a href="">Terms and Conditions</a>
@@ -306,7 +335,6 @@
 
             <a href="">Facebook</a>
             <a href="">Twitter</a>
-            <a href="">Youtube</a>
             <a href="">Instagram</a>
             <a href="">LinkedIn</a>
 

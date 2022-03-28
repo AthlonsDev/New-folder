@@ -34,8 +34,8 @@
                 <a href="../ThingsToDo/Events.html">Events</a>
             </div>
         </div>
-        <a href="ContactUs.html">Contact Us</a>
-        <a href="Environment.html">Environment</a>
+        <a href="../ContactUs.html">Contact Us</a>
+        <a href="../Environment.html">Environment</a>
     </nav>
 
 
@@ -46,9 +46,9 @@
         <!-- Contact Form -->
         <div class="form-container">
 
-            <form action="" class="form">
-                <label for="name">First Name</label>
-                <input type="text" class="name" placeholder="Enter Name...">
+            <form name="contact" action="" class="form"  onclick="validateForm(this)">
+                <label for="name" id="name">First Name</label>
+                <input type="text" class="name" id="name" placeholder="Enter Name...">
 
                 <label for="name">Last Name</label>
                 <input type="text" class="name" placeholder="Enter Last Name...">
@@ -67,6 +67,7 @@
                 <label for="Meassage">Message</label>
                 <textarea name="message" id="message" cols="30" rows="10"
                     placeholder="Write Your Message Here..."></textarea>
+
 
                 <input type="submit" value="submit" class="submit">
 

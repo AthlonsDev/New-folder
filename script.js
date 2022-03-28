@@ -3,16 +3,16 @@
 //     scrolling()
 // };
 
-// const nav = document.getElementById("nav")
-// const logo = document.getElementById("logo")
+// var booking = document.getElementById("book");
+// const logo = document.getElementById("logo");
 
 
 // function scrolling() {
-//     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-//         nav.style.padding = "2px 2%";
+//     if (document.body.scrollTop > 900) {
+//         booking.style.top = 2000;
 
 //     } else {
-//         nav.style.padding = "14px 16px";
+//       booking.style.top = 900;
 //     }
 // }
 
@@ -46,4 +46,25 @@ var togBtn = document.getElementById("toggle");
 function toggleDarkmode() {
   var body = document.body;
   body.classList.toggle("darkMode");
+}
+
+
+var bookBtn = document.getElementById("bookBtn");
+var cities = document.getElementById("cities");
+
+if (cities.nodeValue == "Alghero") {
+  bookBtn.action = "cities/Alghero.html"
+}
+
+// Validate Form 
+function validateForm(form) {
+
+  if (form.name.value == "") {
+    alert("Invalid Entry");
+    document.getElementById("name").style.border = "1";
+    document.getElementById("name").style.borderColor = "Red";
+
+  }
+  
+  
 }
