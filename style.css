@@ -14,7 +14,7 @@ body {
 
 /*NavBar*/
 .navbar {
-    background-color: rgba(214, 50, 0, 0.699);
+    background-color: rgb(214, 50, 0);
     z-index: 10;
     width: 100%;
     position: sticky;
@@ -57,18 +57,12 @@ body {
 
 }
 
-
-/* .navbar a:hover, .dropdown:hover .dropbtn {
-    color: ;
-  } */
-
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
 }
 
 .dropdown-content a {
@@ -81,7 +75,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(136, 0, 0);
+    background-color: rgb(149, 0, 0);
     color: white;
 }
 
@@ -92,7 +86,7 @@ body {
 /* Dark mode button */
 .dark-mode {
     position: sticky;
-    top: 820;
+    top: 820px;
     margin-left: 1%;
 }
 
@@ -201,7 +195,7 @@ body {
 }
 
 .Booking {
-    z-index: 99;
+    z-index: 10;
     top: 900;
     position: sticky;
     background-color: #aa0404;
@@ -431,8 +425,10 @@ padding: 20px;
 
 .footer {
     display: flex;
+    position: sticky;
     background-color: rgb(211, 211, 211);
     margin-top: 5%;
+    z-index: 99;
 }
 
 .links {
