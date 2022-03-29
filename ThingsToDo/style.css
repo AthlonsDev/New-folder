@@ -247,6 +247,7 @@ li {
 
 button:hover {
     background-color: rgb(141, 0, 0);
+    color: white;
 }
 
 .grid-item img {
@@ -418,11 +419,28 @@ button:hover {
 
 
     .cover h1 {
-        margin-left: 35%;
+        margin-left: 32%;
     }
 
     .cover button {
-        margin-left: 46%;
+        margin-left: 43%;
+    }
+
+    .Bookings {
+        margin-left: 5%;
+    }
+
+    .gridContainer {
+        grid-template-columns: 450px 450px 450px;
+        margin-left: -2%;
+    }
+
+    .grid-item img {
+        width: 400px;
+    }
+
+    .dark-mode {
+        top: 680px;
     }
 
 }

@@ -96,6 +96,7 @@ html {
 }
 
 
+
 /* Cover */
 .cover {
     position: relative;
@@ -110,7 +111,14 @@ html {
     /* Image is dynamically changed by the script depending on the title */
 }
 
+button {
+    background-color: rgb(207, 0, 0);
+    color: white;
+}
 
+button:hover {
+    background-color: rgb(141, 0, 0);
+}
 
 .cover button {
     position: absolute;
@@ -118,7 +126,6 @@ html {
     margin-left: 46%;
     padding: 15px 40px;
     text-decoration: none;
-    background-color: red;
     border-style: none;
     border-radius: 12px;
     color: white;
@@ -211,7 +218,6 @@ html {
     margin-left: 25%;
     padding: 15px 40px;
     text-decoration: none;
-    background-color: rgb(255, 255, 255);
     border-style: none;
     border-radius: 12px;
     cursor: pointer;

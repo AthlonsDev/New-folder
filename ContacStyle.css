@@ -9,11 +9,6 @@ body {
     color: black;
 }
 
-.darkMode {
-    background-color: rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -96,19 +91,6 @@ html {
     display: block;
 }
 
-/* Dark mode button */
-.dark-mode {
-    position: sticky;
-    top: 820;
-    margin-left: 1%;
-}
-
-.dark-mode button {
-    border-width: 0;
-    background-color: rgba(255, 255, 255, .5);
-    border-radius: 50%;
-    cursor: pointer;
-}
 
 
 /* Cover */
@@ -267,4 +249,18 @@ html {
 .developers h1 {
     font-size: 26;
     margin-bottom: 1%;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1820px) {
+
+
+    .cover h1 {
+        margin-left: 38%;
+        margin-top: 3%;
+    }
+
+    .form-container {
+        margin-top: 8%;
+    }
+
 }
