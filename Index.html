@@ -13,7 +13,11 @@
 
 <body>
     <nav class="navbar" id="nav">
-        <a href="index.html" id="logo">Home</a>
+        <a href="index.html" id="logo">
+            <div class="imageContainer">
+                <img src="images/Logo.png" alt="">
+            </div>
+        </a>
         <div class="dropdown">
             <button class="dropbtn" id="cities">Cities
             </button>
@@ -34,48 +38,82 @@
                 <a href="ThingsToDo/Events.html">Events</a>
             </div>
         </div>
-        <a href="ContactUs.html">Contact Us</a>
-        <a href="Environment.html">Environment</a>
-        
+        <a href="ContactUs.html" class="contact">Contact Us</a>
+
     </nav>
 
-
-
-    <!----Content---->
-
-
-
-    <!-- slideshow div containing all the slides -->
-
-    <section>
-        <div class="slideContainer" dataContainer>
-            <button class="slideBbutton prev" dataButton="prev">&#8656;</button>
-            <button class="slideBbutton next" dataButton="next">&#8658;</button>
-            <h1 class="banner"> Staycation Sardinia</h1>
-            <h2 class="subTitle">Explore The Local Wonders Of The Island</h2>
-            <ul dataSlides>
-                <li class="slide" data-active>
-                    <img src="images/Domus De Maria.jpg" alt="">
-                </li>
-                <li class="slide">
-                    <img src="images/Oristano.jpg" alt="">
-                </li>
-                <li class="slide">
-                    <img src="images/Cagliari_2.jpg" alt="">
-                </li>
-            </ul>
-
+    <div id="content">
+        <div class="navbar-mobile">
+            <div class="sidebar" id="sidebar">
+                <div class="dropdown-mobile">
+                    <button class="dropbtn-mobile" id="cities">Cities
+                    </button>
+                    <div class="dropdown-content-mobile">
+                        <a href="cities/Cagliari.html">Cagliari</a>
+                        <a href="cities/Alghero.html">Alghero</a>
+                        <a href="cities/Nuoro.html">Nuoro</a>
+                        <a href="cities/Maddalena.html">La Maddalena</a>
+                    </div>
+                </div>
+                <div class="dropdown-mobile">
+                    <button class="dropbtn-mobile" id="activities">Activities
+                    </button>
+                    <div class="dropdown-content-mobile">
+                        <a href="ThingsToDo/Beaches.html">Beach Going</a>
+                        <a href="ThingsToDo/Hiking.html">Hiking</a>
+                        <a href="ThingsToDo/Cultural.html">Cultural Sites</a>
+                        <a href="ThingsToDo/Events.html">Events</a>
+                    </div>
+                </div>
+                <a href="ContactUs.html" class="contact">Contact Us</a>
+            </div>
+            <div class="main">
+                <button class="openBtn" onclick="toggleNav()">☰</button>
+            </div>
         </div>
+
+
+
+
+
+
+        <!----Content---->
+
+
+
+
+
+        <!-- slideshow div containing all the slides -->
+
+        <section>
+            <div class="slideContainer" dataContainer>
+                <button class="slideBbutton prev" dataButton="prev">&#8656;</button>
+                <button class="slideBbutton next" dataButton="next">&#8658;</button>
+                <h1 class="banner"> Staycation Sardinia</h1>
+                <h2 class="subTitle">Explore The Local Wonders Of The Island</h2>
+                <ul dataSlides>
+                    <li class="slide" data-active>
+                        <img src="images/Domus De Maria.jpg" alt="">
+                    </li>
+                    <li class="slide">
+                        <img src="images/Oristano.jpg" alt="">
+                    </li>
+                    <li class="slide">
+                        <img src="images/Cagliari_2.jpg" alt="">
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
     
-    </section>
-    </div>
 
     <div class="dark-mode">
         <button onclick="toggleDarkmode()" id="toggle" title="dark"><img src="images/DarkMode.png" alt=""></button>
-        
+
     </div>
 
-    
+
     <form class="Booking" id="book">
         <label for="">From</label>
         <input type="date" name="Date" id="Date">
@@ -111,7 +149,7 @@
 
         <div class="title">
 
-            <h1>Locations To Visit</h1>
+            <h1 style="font-size: 68px;">Locations To Visit</h1>
 
         </div>
         <div class="places">
@@ -306,8 +344,20 @@
 
 
 
+    <!-- Environment -->
+
+    <div class="environment">
+        <h1 style="margin-left: 30%; font-size: 48; margin-top: 2%;">How Staycation Helps The Environment</h1>
+        <img src="images/landscapeVector.svg" alt="">
+        <table>
+
+        </table>
+    </div>
+
+
     <!-- Link to Javascript file -->
     <script src="script.js"></script>
+    </div>
 
 </body>
 

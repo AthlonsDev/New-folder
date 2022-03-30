@@ -20,7 +20,7 @@ html {
 
 /*NavBar*/
 .navbar {
-    background-color: rgba(214, 50, 0, 0.699);
+    background-color: rgb(214, 50, 0);
     z-index: 10;
     width: 100%;
     position: sticky;

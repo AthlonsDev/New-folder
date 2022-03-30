@@ -15,11 +15,23 @@ body {
 /*NavBar*/
 .navbar {
     background-color: rgb(214, 50, 0);
-    z-index: 10;
+    z-index: 99;
     width: 100%;
     position: sticky;
     top: 0;
     display: inline-block;
+}
+
+.imageContainer {
+    width: 50px;
+    height: 25;
+}
+
+.imageContainer img {
+    position: absolute;
+    width: 5%;
+    margin-left: -2%;
+    margin-top: -1%;
 }
 
 
@@ -201,7 +213,7 @@ body {
     background-color: #aa0404;
     width: 100%;
     height: 45px;
-    
+
 }
 
 .Booking label {
@@ -238,7 +250,7 @@ body {
 
 .locations h1 {
     padding: 2%;
-    margin-left: 40%;
+    margin-left: 35%;
 }
 
 
@@ -382,13 +394,13 @@ body {
     font-size: 16px;
     cursor: pointer;
     background-color: #aa0404;
-  }
+}
 
 .column1 {
 
-float: left;
-width: 66%;
-padding: 20px;
+    float: left;
+    width: 66%;
+    padding: 20px;
 
 }
 
@@ -418,7 +430,7 @@ padding: 20px;
     height: 50%;
     width: 100%;
     max-width: 100%;
-  }
+}
 
 
 /*Footer*/
@@ -434,7 +446,7 @@ padding: 20px;
 .links {
     display: grid;
     margin: 2%;
-    
+
 }
 
 .links h1 {
@@ -506,7 +518,110 @@ padding: 20px;
 /* Responsive Layout */
 
 /* For tablets: */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
+
+
+    /* Navbar Mobile*/
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        background-color: #d30101;
+        z-index: 99;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        display: inline-block;
+
+    }
+
+    .openBtn {
+        font-size: 22px;
+        cursor: pointer;
+        background-color: #d30101;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        margin-left: 90%;
+        position: sticky;
+        
+    }
+
+    .openBtn:hover {
+        background-color: #790101;
+    }
+
+    .sidebar {
+        z-index: 99;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 60px;
+        background-color: #d30101;
+        transition: 0.5;
+    }
+
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        display: block;
+        color: white;
+        font-size: 26;
+        transition: 0.3;
+    }
+
+    #content {
+        transition: margin-right .5s;
+    }
+
+
+    .dropdown-mobile .dropbtn-mobile {
+        border: none;
+        outline: none;
+        padding: 14px 50px;
+        margin: 0;
+        font-size: 22;
+        background-color: inherit;
+        color: white;
+    
+    }
+    
+    .dropdown-content-mobile a:hover, .contact:hover {
+        background-color: #790101;
+    }
+
+
+    .slideContainer {
+        top: 0;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .slideContainer .banner {
+        font-size: 38;
+        margin-left: 20%;
+    }
+
+    .slideContainer .subTitle {
+        font-size: 28;
+        margin-left: 5%;
+        text-align: center;
+        top: -10%;
+    }
+
+    .locations {
+        margin-top: -90%;
+    }
+
+    .locations .title {
+        margin-left: 2%;
+    }
 
     .item {
         display: none;
@@ -537,11 +652,12 @@ padding: 20px;
     .column2,
     .column3,
     .column4 {
-      width: 100%;
-      text-align: center;
+        width: 100%;
+        text-align: center;
     }
+
     .row img {
-      margin: auto;
+        margin: auto;
     }
 
 
@@ -571,11 +687,12 @@ padding: 20px;
     .column2,
     .column3,
     .column4 {
-      width: 25%;
-      text-align: center;
+        width: 25%;
+        text-align: center;
     }
+
     .row img {
-      margin: auto;
+        margin: auto;
     }
 
     .dark-mode {

@@ -49,6 +49,23 @@ function toggleDarkmode() {
 }
 
 
+// Mobile Sidebar
+var nav =  document.getElementById("sidebar");
+
+
+function toggleNav() {
+  if(nav.style.width != "250px") {
+    nav.style.width = "250px";
+    document.getElementById("content").style.marginRight = "250px";
+    document.getElementById("content").style.marginLeft = "-250px";
+  } else {
+    nav.style.width = "0px";
+    document.getElementById("content").style.marginRight = "0px";
+    document.getElementById("content").style.marginLeft = "0px";
+  }
+}
+
+
 var bookBtn = document.getElementById("bookBtn");
 var cities = document.getElementById("cities");
 
