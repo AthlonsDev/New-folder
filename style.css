@@ -12,6 +12,10 @@ body {
     color: white;
 }
 
+.navbar-mobile {
+    display: none;
+}
+
 /*NavBar*/
 .navbar {
     background-color: rgb(214, 50, 0);
@@ -100,6 +104,7 @@ body {
     position: sticky;
     top: 820px;
     margin-left: 1%;
+    z-index: 10;
 }
 
 .dark-mode button {
@@ -207,6 +212,7 @@ body {
 }
 
 .Booking {
+    display: none;
     z-index: 10;
     top: 900;
     position: sticky;
@@ -432,6 +438,50 @@ body {
     max-width: 100%;
 }
 
+table {
+    margin-left: 5%;
+    margin-top: 2%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+    border: 1px solid rgb(139, 0, 0);
+    background-color: #79010146;
+    color: black;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 16px;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+
+.airplane-emission {
+    z-index: 15;
+    height: 25px;
+    width: 150px;
+    background-color: rgb(53, 53, 53);
+    margin-left: 10%;
+}
+.car-emissions {
+    z-index: 15;
+    height: 25px;
+    width: 50px;
+    background-color: rgb(53, 53, 53);
+    margin-left: 10%;
+}
+.train-emissions {
+    z-index: 15;
+    height: 25px;
+    width: 15px;
+    background-color: rgb(53, 53, 53);
+    margin-left: 10%;
+}
+
 
 /*Footer*/
 
@@ -545,7 +595,7 @@ body {
         padding: 10px 15px;
         margin-left: 90%;
         position: sticky;
-        
+
     }
 
     .openBtn:hover {
@@ -586,13 +636,34 @@ body {
         font-size: 22;
         background-color: inherit;
         color: white;
-    
+
     }
-    
-    .dropdown-content-mobile a:hover, .contact:hover {
+
+    .dropdown-content-mobile a:hover,
+    .contact:hover {
         background-color: #790101;
     }
 
+    .Booking {
+        height: 90px;
+        top: 760;
+    }
+
+    .Booking #cities {
+        margin-left: 2%;
+        width: 160px;
+    }
+
+    .Booking button {
+        margin-left: 12.5%;
+        width: 160px;
+    }
+
+
+    .slideBbutton {
+        top: 30%;
+        font-size: 2rem;
+    }
 
     .slideContainer {
         top: 0;
@@ -616,11 +687,11 @@ body {
     }
 
     .locations {
-        margin-top: -90%;
+        margin-top: -95%;
     }
 
     .locations .title {
-        margin-left: 2%;
+        margin-left: -15%;
     }
 
     .item {
@@ -640,7 +711,7 @@ body {
 
 
     .container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 2fr);
         grid-auto-rows: 100px 150px;
     }
 
@@ -703,4 +774,7 @@ body {
         top: 50px;
     }
 
+    .Booking {
+        top: 825px;
+    }
 }

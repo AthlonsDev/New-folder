@@ -46,6 +46,7 @@ var togBtn = document.getElementById("toggle");
 function toggleDarkmode() {
   var body = document.body;
   body.classList.toggle("darkMode");
+  document.getElementById("table").style.color = "white";
 }
 
 
