@@ -41,18 +41,27 @@ buttons.forEach(button => {
 
 // DarkMode
 var togBtn = document.getElementById("toggle");
-
+var isDarkmode = false;
 
 function toggleDarkmode() {
   var body = document.body;
+  
   body.classList.toggle("darkMode");
-  document.getElementById("table").style.color = "white";
+  if (isDarkmode == false) {
+    isDarkmode = true;
+    alert("dark mode on");
+    document.getElementById("table").style.color = "white";
+  } else {
+    alert("dark mode off");
+    document.getElementById("table").style.color = "black";
+    isDarkmode = false;
+  }
+  
 }
 
 
 // Mobile Sidebar
 var nav =  document.getElementById("sidebar");
-
 
 function toggleNav() {
   if(nav.style.width != "250px") {
