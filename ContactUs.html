@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,25 +46,25 @@
         <!-- Contact Form -->
         <div class="form-container">
 
-            <form name="contact" action="" class="form"">
+            <form name="contact" action="#SendMessage" class="form">
                 <label for="name" >First Name</label>
                 <input type="text" class="name" id="name" name="name" placeholder="Enter Name...">
 
                 <label for="Lname">Last Name</label>
-                <input type="text" class="Lname" name="Lname" placeholder="Enter Last Name...">
+                <input type="text" class="Lname" name="Lname" id="Lname" placeholder="Enter Last Name...">
 
                 <label for="Email">Email Address</label>
-                <input type="email" class="Email" name="Email" placeholder="Enter Email...">
+                <input type="email" class="Email" name="Email" id="Email" placeholder="Enter Email...">
 
-                <label for="Country">Select Country</label>
-                <select name="country" class="country">
+                <label for="country">Select Country</label>
+                <select name="country" class="country" id="country">
                     <option value="Italy">Italy</option>
                     <option value="UK">United Kingdom</option>
                     <option value="EU">European Union</option>
                     <option value="US">United States</option>
                 </select>
 
-                <label for="Meassage">Message</label>
+                <label for="message">Message</label>
                 <textarea name="message" id="message" cols="30" rows="10"
                     placeholder="Write Your Message Here..."></textarea>
 
@@ -76,7 +76,7 @@
     </div>
 
     <script src="script.js"></script>
-</body>
+
     <footer>
         <div class="footer">
 
@@ -119,3 +119,4 @@
 
         </div>
     </footer>
+</body>

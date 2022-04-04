@@ -1,5 +1,5 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en">   
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
             </div>
         </a>
         <div class="dropdown">
-            <button class="dropbtn" id="cities">Cities
+            <button class="dropbtn">Cities
             </button>
             <div class="dropdown-content">
                 <a href="cities/Cagliari.html">Cagliari</a>
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn" id="activities">Activities
+            <button class="dropbtn">Activities
             </button>
             <div class="dropdown-content">
                 <a href="ThingsToDo/Beaches.html">Beach Going</a>
@@ -42,11 +42,12 @@
 
     </nav>
 
+    <!-- Navbar For Mobile Version -->
     <div id="content">
         <div class="navbar-mobile">
             <div class="sidebar" id="sidebar">
                 <div class="dropdown-mobile">
-                    <button class="dropbtn-mobile" id="cities">Cities
+                    <button class="dropbtn-mobile">Cities
                     </button>
                     <div class="dropdown-content-mobile">
                         <a href="cities/Cagliari.html">Cagliari</a>
@@ -56,7 +57,7 @@
                     </div>
                 </div>
                 <div class="dropdown-mobile">
-                    <button class="dropbtn-mobile" id="activities">Activities
+                    <button class="dropbtn-mobile">Activities
                     </button>
                     <div class="dropdown-content-mobile">
                         <a href="ThingsToDo/Beaches.html">Beach Going</a>
@@ -77,14 +78,12 @@
         <!-- slideshow div containing all the slides -->
 
         <section>
-            <div class="slideContainer" dataContainer>
-                <button class="slideBbutton prev" dataButton="prev">&#8656;</button>
-                <button class="slideBbutton next" dataButton="next">&#8658;</button>
+            <div class="slideContainer">
                 <h1 class="banner"> Staycation Sardinia</h1>
                 <h2 class="subTitle">Explore The Local Wonders Of The Island</h2>
-                <ul dataSlides>
-                    <li class="slide" data-active>
-                        <img src="images/Domus De Maria.jpg" alt="">
+                <ul>
+                    <li class="slide">
+                        <img src="images/Domus_De_Maria.jpg" alt="">
                     </li>
                     <li class="slide">
                         <img src="images/Oristano.jpg" alt="">
@@ -93,9 +92,7 @@
                         <img src="images/Cagliari_2.jpg" alt="">
                     </li>
                 </ul>
-
             </div>
-
         </section>
 
 
@@ -104,25 +101,21 @@
 
         </div>
 
-        <form class="Booking" id="book">
-            <label for="">From</label>
-            <input type="date" name="Date" id="Date">
+        <form class="Booking">
+            <label for="from-date">From</label>
+            <input type="date" name="from-date" class="date" id="from-date">
 
-            <label for="">To</label>
-            <input type="date" name="Date" id="Date">
+            <label for="to-date">To</label>
+            <input type="date" name="to-date" class="date" id="to-date">
 
-            <label for="">City</label>
-            <select name="Cities" id="cities">
+            <label for="book-cities">City</label>
+            <select name="Cities" id="book-cities">
                 <option value="Italy">Cagliari</option>
                 <option value="UK">Alghero</option>
                 <option value="EU">Nuoro</option>
                 <option value="US">La Maddalena</option>
             </select>
-            <form id="bookBtn" action="cities/Alghero.html">
-                <button id="book">Book</button>
-            </form>
-            <!-- <input type="submit" value="submit" class="submit"> -->
-
+                <button id="bookBtn" onclick="cities/Alghero.html">Book</button>
         </form>
 
         <!-- diving into the actual content of the website -->
@@ -143,7 +136,7 @@
                             <!-- gallery containing the image -->
                             <div class="gallery">
                                 <div class="image">
-                                    <a href="cities/Cagliari.html"><img src="images/Cagliari_1.jpg" alt="Cities"></a>
+                                    <a href="cities/Cagliari.html"><img src="images/Cagliari_2.jpg" alt="Cities"></a>
                                     <!-- <div class="overlay">
                                     
                                 </div> -->
@@ -185,7 +178,7 @@
                         <div class="gallery-item">
                             <div class="gallery">
                                 <div class="image">
-                                    <a href="cities/Alghero.html"><img src="images/Alghero_2.jpg" alt="Cities"></a>
+                                    <a href="cities/Nuoro.html"><img src="images/Nuoro_1.jpg" alt="Cities"></a>
 
                                 </div>
                             </div>
@@ -227,7 +220,7 @@
                         <div class="gallery-item">
                             <div class="gallery">
                                 <div class="image">
-                                    <a href="ThingsToDo/Culture.html"><img src="images/Nuraghe.jpg" alt="Culture"></a>
+                                    <a href="ThingsToDo/Culture.html"><img src="images/Nuraghe_1.jpg" alt="Culture"></a>
 
                                 </div>
                             </div>
@@ -291,7 +284,7 @@
 
                 </div>
                 <div class="column2">
-                    <img src="images/Beach_1.jpg" width="335" height="471">
+                    <img src="images/Beach_1.jpg" width="335" height="471" alt="beach">
                 </div>
             </div>
         </div>
@@ -305,7 +298,7 @@
                     </form>
                 </div>
                 <div class="column4">
-                    <img src="images/Bruncu Mountain.jpg">
+                    <img src="images/Bruncu_Mountain.jpg" alt="Mountain">
                 </div>
             </div>
         </div>
@@ -319,7 +312,7 @@
                     </form>
                 </div>
                 <div class="column2">
-                    <img src="images/Barbagia.jpg" width="335" height="471">
+                    <img src="images/Barbagia.jpg" width="335" height="471" alt="Countryside">
                 </div>
             </div>
         </div>
@@ -329,7 +322,7 @@
         <!-- Environment -->
 
         <div class="environment">
-            <h1 style="margin-left: 30%; font-size: 48; margin-top: 2%;">How Staycation Helps The Environment</h1>
+            <h1 style="margin-left: 30%; font-size: 48px; margin-top: 2%;">How Staycation Helps The Environment</h1>
             <h3>Transportation is a big culprit in the human caused climate change we are experiencing. <br>
                 We can all do our part to change the tide, even the smallest action can have a big impact, starting with
                 our vacations. <br>
@@ -340,26 +333,39 @@
             <br>
             <br>
             <br>
-            <h2 style="margin-left: 5%;"> <em> "Right now we are facing a man-made disaster of global scale, our greatest
-                threat in thousands of years: <br>
-                climate change. If we don’t take action, the collapse of our civilisations <br> and the extinction of
-                much of
-                the natural world is on the horizon".
-                <br>
-                <br>
-                David Attenborough, speech at the Katowice Climate Change Conference, <br> "David Attenborough: collapse of
-                civilisation is on the horizon", The Guardian, 3 December 2018.</em></h2>
+            <h2 style="margin-left: 5%;"> <em> "Right now we are facing a man-made disaster of global scale, our
+                    greatest
+                    threat in thousands of years: <br>
+                    climate change. If we don’t take action, the collapse of our civilisations <br> and the extinction
+                    of
+                    much of
+                    the natural world is on the horizon".
+                    <br>
+                    <br>
+                    David Attenborough, speech at the Katowice Climate Change Conference, <br> "David Attenborough:
+                    collapse of
+                    civilisation is on the horizon", The Guardian, 3 December 2018.</em></h2>
 
             <img src="images/wind-power.jpg" alt="" style="position: absolute;">
             <table id="table">
                 <tr>
-                    <th><h1>Transportation</h1></th>
-                    <th><h1>Co2 Emissions</h1></th>
-                    <th><h1>Vacation</h1></th>
-                    <th><h1>Staycation</h1></th>
+                    <th>
+                        Transportation
+                    </th>
+                    <th>
+                        Co2 Emissions
+                    </th>
+                    <th>
+                        Vacation
+                    </th>
+                    <th>
+                        Staycation
+                    </th>
                 </tr>
                 <tr>
-                    <td><h2>Airplane</h2></td>
+                    <td>
+                        <h2>Airplane</h2>
+                    </td>
                     <td>
                         <div class="airplane-emission"></div>
                     </td>
@@ -367,7 +373,9 @@
                     <td>No</td>
                 </tr>
                 <tr>
-                    <td><h2>Car</h2></td>
+                    <td>
+                        <h2>Car</h2>
+                    </td>
                     <td>
                         <div class="car-emissions"></div>
                     </td>
@@ -375,21 +383,26 @@
                     <td>Small Journeys or None</td>
                 </tr>
                 <tr>
-                    <td><h2>Train</h2></td>
                     <td>
-                        <div class="train-emissions">
+                        <h2>Train</h2>
+                    </td>
+                    <td>
+                        <div class="train-emissions"></div>
                     </td>
                     <td>Long Journeys</td>
                     <td>Small Journeys or None</td>
                 </tr>
                 <tr>
-                    <td><h2>Bike</h2></td>
+                    <td>
+                        <h2>Bike</h2>
+                    </td>
                     <td></td>
                     <td>No</td>
                     <td>Yes</td>
                 </tr>
                 <tr>
-                    <td>*Data taken from <a href="https://www.carbonfootprint.com/calculator.aspx">carbonfootprint.com</a> </td>
+                    <td>*Data taken from <a
+                            href="https://www.carbonfootprint.com/calculator.aspx">carbonfootprint.com</a> </td>
                 </tr>
             </table>
 
@@ -400,47 +413,49 @@
         <script src="script.js"></script>
     </div>
 
+    <footer>
+        <div class="footer">
+    
+            <!-- links to other path of the website, links that, i have found, are usually placed in the footer -->
+            <div class="links">
+    
+                <h1>About Us</h1>
+    
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Privacy</a>
+                <a href="">Accessibility</a>
+                <a href="">Terms and Conditions</a>
+                <a href="">Security</a>
+    
+            </div>
+            <!-- Social links -->
+            <div class="social">
+    
+                <h1>Follow Us</h1>
+    
+                <a href="">Facebook</a>
+                <a href="">Twitter</a>
+                <a href="">Instagram</a>
+                <a href="">LinkedIn</a>
+    
+    
+            </div>
+            <!-- This is usually found in open source projects, or companies that use their own API and things like that -->
+            <div class="developers">
+    
+                <h1>Developer</h1>
+                <!-- A Github link to the repository where all the steps of the website can be tracked, from start to finish -->
+                <p>This Website source code will be entirely available in Github, for resources and contributions</p>
+                <a href="https://github.com/AthlonsDev/Staycation_Website">Github Repository</a>
+    
+            </div>
+    
+        </div>
+    </footer>
+
 </body>
 
-<footer>
-    <div class="footer">
 
-        <!-- links to other path of the website, links that, i have found, are usually placed in the footer -->
-        <div class="links">
-
-            <h1>About Us</h1>
-
-            <a href="">About Us</a>
-            <a href="">Contact Us</a>
-            <a href="">Privacy</a>
-            <a href="">Accessibility</a>
-            <a href="">Terms and Conditions</a>
-            <a href="">Security</a>
-
-        </div>
-        <!-- Social links -->
-        <div class="social">
-
-            <h1>Follow Us</h1>
-
-            <a href="">Facebook</a>
-            <a href="">Twitter</a>
-            <a href="">Instagram</a>
-            <a href="">LinkedIn</a>
-
-
-        </div>
-        <!-- This is usually found in open source projects, or companies that use their own API and things like that -->
-        <div class="developers">
-
-            <h1>Developer</h1>
-            <!-- A Github link to the repository where all the steps of the website can be tracked, from start to finish -->
-            <p>This Website source code will be entirely available in Github, for resources and contributions</p>
-            <a href="https://github.com/AthlonsDev/Staycation_Website">Github Repository</a>
-
-        </div>
-
-    </div>
-</footer>
 
 </html>

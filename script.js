@@ -1,42 +1,21 @@
-// Navigation Bar Animation
-// window.onscroll = function () {
-//     scrolling()
-// };
-
-// var booking = document.getElementById("book");
-// const logo = document.getElementById("logo");
 
 
-// function scrolling() {
-//     if (document.body.scrollTop > 900) {
-//         booking.style.top = 2000;
+// Shows slides with timer
+var myIndex = 0;
+carousel();
 
-//     } else {
-//       booking.style.top = 900;
-//     }
-// }
-
-
-
-//Slideshow user controlled
-const buttons = document.querySelectorAll("[dataButton]")
-
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const offset = button.dataset.carouselButton === "next" ? 1 : -1
-    const slides = button
-      .closest("[dataContainer]")
-      .querySelector("[dataSlides]")
-
-    const activeSlide = slides.querySelector("[data-active]")
-    let newIndex = [...slides.children].indexOf(activeSlide) + offset
-    if (newIndex < 0) newIndex = slides.children.length - 1
-    if (newIndex >= slides.children.length) newIndex = 0
-
-    slides.children[newIndex].dataset.active = true
-    delete activeSlide.dataset.active
-  })
-})
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  
+  x[myIndex-1].style.display = "block"; 
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
 
 
 // DarkMode
@@ -45,7 +24,7 @@ var isDarkmode = false;
 
 function toggleDarkmode() {
   var body = document.body;
-  
+
   body.classList.toggle("darkMode");
   if (isDarkmode == false) {
     isDarkmode = true;
@@ -56,15 +35,15 @@ function toggleDarkmode() {
     document.getElementById("table").style.color = "black";
     isDarkmode = false;
   }
-  
+
 }
 
 
 // Mobile Sidebar
-var nav =  document.getElementById("sidebar");
+var nav = document.getElementById("sidebar");
 
 function toggleNav() {
-  if(nav.style.width != "250px") {
+  if (nav.style.width != "250px") {
     nav.style.width = "250px";
     document.getElementById("content").style.marginRight = "250px";
     document.getElementById("content").style.marginLeft = "-250px";
@@ -107,6 +86,6 @@ function validateForm(form) {
     alert("Invalid Message");
 
   }
-  
-  
+
+
 }

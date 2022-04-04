@@ -1,16 +1,21 @@
 * {
     margin: 0;
-
+    box-sizing: border-box;
 }
-
 
 body {
     background-color: white;
     color: black;
 }
 
+html, body {
+    padding:0;
+    margin:0;
+    /* height: 100%; */
+}
+
 .darkMode {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(3, 0, 19);
     color: white;
 }
 
@@ -19,18 +24,6 @@ html {
 }
 
 /*NavBar*/
-
-.imageContainer {
-    width: 50px;
-    height: 25;
-}
-
-.imageContainer img {
-    position: absolute;
-    width: 5%;
-    margin-left: -2%;
-    margin-top: -1%;
-}
 .navbar {
     background-color: rgb(214, 50, 0);
     z-index: 10;
@@ -43,7 +36,7 @@ html {
 
 .navbar a {
     float: left;
-    font-size: 18;
+    font-size: 18px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -55,12 +48,25 @@ html {
 }
 
 /* navbar */
+
+.imageContainer {
+    width: 50px;
+    height: 25px;
+}
+
+.imageContainer img {
+    position: absolute;
+    width: 5%;
+    margin-left: -2%;
+    margin-top: -1.2%;
+}
+
 .navbar a {
     border: none;
     outline: none;
     padding: 14px 22px;
     margin: 0;
-    font-size: 22;
+    font-size: 22px;
     background-color: inherit;
     color: white;
 }
@@ -70,16 +76,11 @@ html {
     outline: none;
     padding: 14px 50px;
     margin: 0;
-    font-size: 22;
+    font-size: 22px;
     background-color: inherit;
     color: white;
 
 }
-
-
-/* .navbar a:hover, .dropdown:hover .dropbtn {
-    color: ;
-  } */
 
 .dropdown-content {
     display: none;
@@ -111,7 +112,7 @@ html {
 /* Dark mode button */
 .dark-mode {
     position: sticky;
-    top: 820;
+    top: 820px;
     margin-left: 1%;
 }
 
@@ -126,9 +127,9 @@ html {
 /* Cover */
 .cover {
     position: relative;
-    width: 100%;
-    height: 100%;
-    top: -60;
+    width: 1900px;
+    height: 920px;
+    top: -60px;
     /* Parallax Effect */
     background-attachment: fixed;
     background-position: center;
@@ -148,7 +149,7 @@ html {
     border-style: none;
     border-radius: 12px;
     color: white;
-    font-size: 24;
+    font-size: 24px;
     cursor: pointer;
 }
 
@@ -160,7 +161,7 @@ html {
 
     color: white;
     text-decoration: none;
-    font-size: 22;
+    font-size: 22px;
     appearance: button;
 }
 
@@ -169,7 +170,7 @@ html {
     margin-left: 35%;
     margin-top: 15%;
     color: white;
-    font-size: 66;
+    font-size: 66px;
     object-position: 50%, 50%;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -192,27 +193,27 @@ li {
     border-radius: 12px;
     color: #f9f9f9;
     cursor: pointer;
-    font-size: 16;
+    font-size: 16px;
     
 }
 
 .Locations {
     margin-left: 37%;
     margin-bottom: 2%;
-    font-size: 56;
+    font-size: 56px;
     margin-top: -2%;
 }
 
 .Bookings .Title {
     margin-top: 3%;
-    font-size: 56;
+    font-size: 56px;
     margin-left: 35%;
 
 }
 
 .Bookings h2 {
     margin-top: 3%;
-    font-size: 36;
+    font-size: 36px;
 }
 
 .Bookings h3 {
@@ -280,7 +281,7 @@ button:hover {
 }
 
 .links h1 {
-    font-size: 22;
+    font-size: 22px;
     margin-bottom: 1%;
     line-height: 1;
 }
@@ -303,13 +304,13 @@ button:hover {
 .social a {
     padding: 0.5%;
     text-decoration: none;
-    font-size: 16;
+    font-size: 16px;
     color: black;
     width: 10%;
 }
 
 .social h1 {
-    font-size: 22;
+    font-size: 22px;
     margin-bottom: 1%;
 }
 
@@ -324,20 +325,20 @@ button:hover {
 }
 
 .developers p {
-    font-size: 18;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .developers a {
     padding: 0.5%;
     text-decoration: none;
-    font-size: 18;
+    font-size: 18px;
     color: black;
     width: 10%;
 }
 
 .developers h1 {
-    font-size: 26;
+    font-size: 26px;
     margin-bottom: 1%;
 }
 
@@ -363,7 +364,7 @@ button:hover {
     }
 
     .history h3 {
-        font-size: 15;
+        font-size: 15px;
     }
 }
 
@@ -390,7 +391,7 @@ button:hover {
     }
 
     .history h3 {
-        font-size: 15;
+        font-size: 15px;
     }
 
     .developers {
