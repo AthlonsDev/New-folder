@@ -397,21 +397,27 @@ button:hover {
 
 @media screen and (min-width: 1200px) and (max-width: 1820px) {
 
+    .cover {
+        width: 1520px;
+        height: 720px;
+    }
 
     .cover h1 {
-        margin-left: 42%;
+        margin-left: 44%;
     }
 
     .cover button {
-        margin-left: 42%;
+        margin-left: 44%;
     }
 
 
     .history img {
-
         margin-top: -30%;
         margin-left: 5%;
+    }
 
+    .history h3 {
+        margin-left: 40%;
     }
 
     .gridContainer {

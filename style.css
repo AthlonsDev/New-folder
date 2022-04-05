@@ -716,18 +716,9 @@ td:first-child {
     }
 
     .slide img {
-        width: 1801px;
+        width: 1520px;
         height: 720px;
 
-    }
-
-    .dark-mode {
-        top: 620px;
-    }
-
-    .Booking {
-        top: 720x;
-        position: sticky;
     }
 
     .column1,
@@ -743,14 +734,15 @@ td:first-child {
     }
 
     .dark-mode {
-        top: 680px;
+        top: 600px;
     }
 
     .Booking {
-        top: 50px;
+        top: 660px;
     }
 
-    .Booking {
-        top: 825px;
+    .environment img {
+        margin-left: 74%;
     }
+
 }

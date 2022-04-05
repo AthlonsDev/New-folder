@@ -253,6 +253,11 @@ html {
 
 @media screen and (min-width: 1200px) and (max-width: 1820px) {
 
+    .cover {
+        width: 1520px;
+        height: 720px;
+    }
+
 
     .cover h1 {
         margin-left: 38%;
@@ -261,6 +266,11 @@ html {
 
     .form-container {
         margin-top: 8%;
+    }
+
+    .form {
+        width: 608px;
+        height: 590px;
     }
 
 }
