@@ -8,15 +8,36 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("slide");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   
   x[myIndex-1].style.display = "block"; 
+  // x[i].style.opacity = 1;  
+  // document.style.classList.fade();
+
   setTimeout(carousel, 3000); // Change image every 2 seconds
 }
 
+
+// Booking Bar to disappear when bottom of page is reached
+
+document.onscroll = function() {
+  if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+    document.getElementById("bookingBar").style.display = "none";
+  } else {
+    document.getElementById("bookingBar").style.display = "block";
+  }
+}
+
+
+// if(document.body.scrollTop > 100) {
+//     document.getElementById("bookingBar").style.display = "none";
+// } else if (document.body.scrollTop < 100) {
+//   document.getElementById("bookingBar").style.display = "block";
+
+// }
 
 // DarkMode
 var togBtn = document.getElementById("toggle");

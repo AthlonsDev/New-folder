@@ -271,76 +271,39 @@ button:hover {
 
 .footer {
     display: flex;
+    position: static;
     background-color: rgb(211, 211, 211);
-    margin-top: 5%;
+    margin-top: 2%;
+    z-index: 99;
 }
 
-.links {
-    display: grid;
-    margin: 2%;
-}
-
-.links h1 {
-    font-size: 22px;
-    margin-bottom: 1%;
-    line-height: 1;
-}
-
-.links a {
-    padding: 0.5%;
-    text-decoration: none;
-    font-size: 16;
-    color: black;
-    width: 10%;
+.footer h1 {
+    font-size: 26px;
+    margin-left: 10%
 }
 
 .social {
-    display: grid;
-    margin-left: 5%;
-    margin-bottom: 2%;
-    margin-top: 2%;
+    margin-left: 20%;
 }
 
-.social a {
-    padding: 0.5%;
+.footer a {
     text-decoration: none;
-    font-size: 16px;
-    color: black;
-    width: 10%;
-}
-
-.social h1 {
     font-size: 22px;
-    margin-bottom: 1%;
+    margin-top: 5%;
+    color: black;
 }
 
 .developers {
-    display: grid;
-    margin-left: 5%;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    color: black;
-    width: 10%;
-    margin-left: 60%;
-}
-
-.developers p {
-    font-size: 18px;
-    font-weight: bold;
+    margin-left: 20%;
 }
 
 .developers a {
-    padding: 0.5%;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    width: 10%;
+    margin-left: 10%;
+    font-size: 26px;
 }
 
-.developers h1 {
-    font-size: 26px;
-    margin-bottom: 1%;
-}
+
+
 
 /* Responsive Layout */
 
@@ -398,34 +361,6 @@ button:hover {
         margin-left: 35%;
     }
 
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1820px) {
-
-
-    .cover h1 {
-        margin-left: 42%;
-    }
-
-    .cover button {
-        margin-left: 42%;
-    }
-
-
-    .history img {
-
-        margin-top: -30%;
-        margin-left: 5%;
-
-    }
-
-    .gridContainer {
-        grid-template-columns: auto auto;
-    }
-
-    .grid-item img {
-        width: 600px;
-    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1820px) {
