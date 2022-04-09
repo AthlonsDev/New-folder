@@ -25,7 +25,7 @@ html {
 
 /*NavBar*/
 .navbar {
-    background-color: rgb(214, 50, 0);
+    background-color: #ff0000;
     z-index: 10;
     width: 100%;
     position: sticky;
@@ -101,7 +101,7 @@ html {
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(136, 0, 0);
+    background-color: #cc0000;
     color: white;
 }
 
@@ -145,7 +145,7 @@ html {
     margin-left: 43%;
     padding: 15px 40px;
     text-decoration: none;
-    background-color: rgb(207, 0, 0);
+    background-color: #ff0000;
     border-style: none;
     border-radius: 12px;
     color: white;
@@ -154,7 +154,7 @@ html {
 }
 
 .cover button:hover {
-    background-color: rgb(141, 0, 0);
+    background-color: #990000;
 }
 
 .cover a {
@@ -179,7 +179,7 @@ html {
     margin-left: 10%;
 }
 
-li {
+.quickLinks li {
     display: inline-block;
     margin-right: 3%;
     margin-top: 2%;
@@ -188,7 +188,7 @@ li {
 .quickLinks button {
     padding: 15px 40px;
     text-decoration: none;
-    background-color: rgb(207, 0, 0);
+    background-color: #ff0000;
     border-style: none;
     border-radius: 12px;
     color: #f9f9f9;
@@ -250,7 +250,7 @@ li {
     padding: 15px 40px;
     margin-top: 5%;
     text-decoration: none;
-    background-color: rgb(207, 0, 0);
+    background-color: #ff0000;
     border-style: none;
     border-radius: 12px;
     color: #f9f9f9;
@@ -259,7 +259,7 @@ li {
 }
 
 button:hover {
-    background-color: rgb(141, 0, 0);
+    background-color: #990000;
     color: white;
 }
 
@@ -273,7 +273,7 @@ button:hover {
     display: flex;
     position: static;
     background-color: rgb(211, 211, 211);
-    margin-top: 2%;
+    margin-top: 0%;
     z-index: 99;
 }
 
@@ -284,6 +284,7 @@ button:hover {
 
 .social {
     margin-left: 20%;
+    
 }
 
 .footer a {
@@ -301,9 +302,6 @@ button:hover {
     margin-left: 10%;
     font-size: 26px;
 }
-
-
-
 
 /* Responsive Layout */
 

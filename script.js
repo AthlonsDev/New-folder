@@ -24,20 +24,13 @@ function carousel() {
 // Booking Bar to disappear when bottom of page is reached
 
 document.onscroll = function() {
-  if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+  if (window.innerHeight + window.scrollY >= document.body.clientHeight) {
     document.getElementById("bookingBar").style.display = "none";
   } else {
     document.getElementById("bookingBar").style.display = "block";
   }
 }
 
-
-// if(document.body.scrollTop > 100) {
-//     document.getElementById("bookingBar").style.display = "none";
-// } else if (document.body.scrollTop < 100) {
-//   document.getElementById("bookingBar").style.display = "block";
-
-// }
 
 // DarkMode
 var togBtn = document.getElementById("toggle");
