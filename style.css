@@ -366,10 +366,16 @@ html {
 
 .xlarge-font {
     font-size: 70px;
+    margin-bottom: 2%;
 }
 
 .large-font {
     font-size: 48px;
+    margin-bottom: 2%;
+}
+
+.medium-font {
+    font-size: 36px;
 }
 
 .button {
@@ -379,6 +385,7 @@ html {
     font-size: 16px;
     cursor: pointer;
     background-color: #cc0000;
+    margin-top: 10%;
 }
 
 .column1 {
