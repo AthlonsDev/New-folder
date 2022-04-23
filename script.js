@@ -24,7 +24,7 @@ function carousel() {
 // Booking Bar to disappear when bottom of page is reached
 
 document.onscroll = function() {
-  if (window.innerHeight + window.scrollY >= document.body.clientHeight) {
+  if (window.innerHeight + window.scrollY + 400 >= document.body.clientHeight) {
     document.getElementById("bookingBar").style.display = "none";
   } else {
     document.getElementById("bookingBar").style.display = "block";

@@ -219,7 +219,7 @@ html {
 }
 
 .Booking button {
-    background-color: #cc0000;
+    background-color: #990000;
     color: white;
     font-size: 22px;
     border: none;
@@ -718,6 +718,10 @@ td:first-child {
         width: 1520px;
         height: 720px;
 
+    }
+
+    .climate button {
+        margin-left: 15%;
     }
 
     .column1,
