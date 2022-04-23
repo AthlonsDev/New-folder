@@ -605,7 +605,15 @@ td:first-child {
 
     .Booking {
         height: 90px;
-        top: 760;
+        top: 660px;
+    }
+
+    .Booking #book-cities {
+        margin-left: 15%;
+    }
+ 
+    .dark-mode {
+        top: 600px;
     }
 
     .Booking #cities {
@@ -635,14 +643,15 @@ td:first-child {
 
     .slideContainer .banner {
         font-size: 38;
-        margin-left: 20%;
+        margin-left: 25%;
+        margin-top: -2%;
     }
 
     .slideContainer .subTitle {
         font-size: 28;
         margin-left: 5%;
         text-align: center;
-        top: -10%;
+        top: -25%;
     }
 
     .locations {
@@ -668,10 +677,23 @@ td:first-child {
 
     }
 
+    .locations {
+        margin-top: -10%;
+    }
+
+    .climate button {
+        height: 50px;
+        width: 250px;
+        font-size: 15px;
+        margin-left: 3%;
+        margin-top: 30%;
+    }
+
 
     .container {
-        grid-template-columns: repeat(1, 2fr);
-        grid-auto-rows: 100px 150px;
+        width: 1500px;
+        display: grid;
+        grid-template-columns: 100px 100px;
     }
 
     .climate .image img {
@@ -686,13 +708,22 @@ td:first-child {
         text-align: center;
     }
 
+
     .row img {
         margin: auto;
     }
 
+    table {
+        margin-left: 1%;
+    }
+
+    .environment img {
+        display: none;
+    }
+
 
     .footer .developers {
-        margin-left: 30%;
+        margin-left: 10%;
     }
 
 
