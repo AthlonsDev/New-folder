@@ -15,7 +15,7 @@ html {
 
 /*NavBar*/
 .navbar {
-    background-color: rgb(214, 50, 0);
+    background-color: #ff0000;
     z-index: 10;
     width: 100%;
     position: sticky;
@@ -38,6 +38,17 @@ html {
 }
 
 /* navbar */
+.imageContainer {
+    width: 50px;
+    height: 25px;
+}
+
+.imageContainer img {
+    position: absolute;
+    width: 5%;
+    margin-left: -2%;
+    margin-top: -1%;
+}
 .navbar a {
     border: none;
     outline: none;
@@ -83,7 +94,7 @@ html {
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(136, 0, 0);
+    background-color: #cc0000;
     color: white;
 }
 
@@ -110,7 +121,7 @@ html {
 .cover h1 {
     position: absolute;
     margin-left: 42%;
-    margin-top: 2%;
+    margin-top: 3%;
     color: white;
     font-size: 66px;
     object-position: 50%, 50%;
@@ -142,6 +153,7 @@ html {
     font-size: 22;
     margin-top: 2%;
     margin-bottom: 2%;
+    font-weight: bold;
 }
 
 
@@ -165,14 +177,14 @@ html {
 }
 
 .submit {
-    background-color: rgb(207, 0, 0);
+    background-color: #ff0000;
     color: white;
     font-size: 22px;
     border: none;
 }
 
 .submit:hover {
-    background-color: rgb(141, 0, 0);
+    background-color: #cc0000;
 }
 
 
