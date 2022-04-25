@@ -55,7 +55,7 @@ html {
 }
 
 .dropdown {
-    float: right;
+    float: left;
 }
 
 .navbar a {
@@ -95,14 +95,25 @@ html {
     display: block;
     text-align: left;
 }
-
+/* change color on hovering to display selection */
 .dropdown-content a:hover {
-    background-color: rgb(149, 0, 0);
+    background-color: #cc0000;
     color: white;
 }
-
+/* Displays menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.searchbar {
+    float: right;
+    margin-top: 0.8%;
+    margin-right: 10%;
+    height: 25px;
+    width: 250px;
+    border-radius: 50px;
+    border: none;
+    text-align:center;
 }
 
 /* Dark mode button */
@@ -169,26 +180,7 @@ html {
 
 }
 
-.slide {
-    opacity: 0;
-    transition: 800ms opacity ease-in-out;
-    transition-delay: 50ms;
-}
 
-.slide {
-    opacity: 1;
-    transition-delay: 0ms;
-}
-
-@keyframes fader {
-    from {
-        opacity: 1.0;
-    }
-
-    to {
-        opacity: 0.0;
-    }
-}
 
 /* Booking */
 
@@ -375,7 +367,7 @@ html {
 }
 
 .medium-font {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .button {
@@ -389,7 +381,7 @@ html {
 }
 
 .column1 {
-
+    position: absolute;
     float: left;
     width: 66%;
     padding: 20px;
