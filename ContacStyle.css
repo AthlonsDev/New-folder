@@ -34,7 +34,7 @@ html {
 }
 
 .dropdown {
-    float: right;
+    float: left;
 }
 
 /* navbar */
@@ -102,6 +102,16 @@ html {
     display: block;
 }
 
+.searchbar {
+    float: right;
+    margin-top: 0.8%;
+    margin-right: 10%;
+    height: 25px;
+    width: 250px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+}
 
 
 /* Cover */
