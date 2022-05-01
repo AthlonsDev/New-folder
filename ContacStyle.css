@@ -134,7 +134,6 @@ html {
     margin-top: 3%;
     color: white;
     font-size: 66px;
-    object-position: 50%, 50%;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -160,7 +159,7 @@ html {
 }
 
 .form label {
-    font-size: 22;
+    font-size: 22px;
     margin-top: 2%;
     margin-bottom: 2%;
     font-weight: bold;
@@ -212,7 +211,7 @@ html {
 }
 
 .links h1 {
-    font-size: 22;
+    font-size: 22px;
     margin-bottom: 1%;
     line-height: 1px;
 }
@@ -241,7 +240,7 @@ html {
 }
 
 .social h1 {
-    font-size: 22;
+    font-size: 22px;
     margin-bottom: 1%;
 }
 
@@ -256,20 +255,20 @@ html {
 }
 
 .developers p {
-    font-size: 18;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .developers a {
     padding: 0.5%;
     text-decoration: none;
-    font-size: 18;
+    font-size: 18px;
     color: black;
     width: 10%;
 }
 
 .developers h1 {
-    font-size: 26;
+    font-size: 26px;
     margin-bottom: 1%;
 }
 

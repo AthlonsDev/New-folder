@@ -332,7 +332,9 @@ html {
 }
 
 .climate button {
-    margin-left: 30%;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -10%;
     padding: 15px 40px;
     text-decoration: none;
     background-color: #ff0000;
@@ -572,7 +574,7 @@ td:first-child {
         right: 0;
         padding-top: 60px;
         background-color: #ff0000;
-        transition: 0.5;
+       
     }
 
     .sidebar a {
@@ -580,8 +582,7 @@ td:first-child {
         text-decoration: none;
         display: block;
         color: white;
-        font-size: 26;
-        transition: 0.3;
+        font-size: 26px;
     }
 
     #content {
@@ -594,7 +595,7 @@ td:first-child {
         outline: none;
         padding: 14px 50px;
         margin: 0;
-        font-size: 22;
+        font-size: 22px;
         background-color: inherit;
         color: white;
 
@@ -644,13 +645,13 @@ td:first-child {
     }
 
     .slideContainer .banner {
-        font-size: 38;
+        font-size: 38px;
         margin-left: 25%;
         margin-top: -2%;
     }
 
     .slideContainer .subTitle {
-        font-size: 28;
+        font-size: 28px;
         margin-left: 5%;
         text-align: center;
         top: -25%;
