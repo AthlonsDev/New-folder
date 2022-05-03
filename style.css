@@ -742,7 +742,8 @@ td:first-child {
     }
 
     .climate button {
-        margin-left: 15%;
+        /* position: relative; */
+        margin-left: 7%;
     }
 
     .column1,
