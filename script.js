@@ -1,4 +1,30 @@
 
+function register() {
+  // const auth = getAuth();
+  
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("pass").value;
+
+  alert("email " + email);
+  //   Add validation for both
+
+
+  // create user
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then((userCredential) => {
+    // Signed in 
+    var user = userCredential.user;
+    // ...
+    alert("User: " + user.userCredential);
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ..
+    alert(errorMessage);
+  });
+
+}
 
 // Shows slides with timer
 var myIndex = 0;
@@ -50,7 +76,8 @@ function toggleDarkmode() {
     isDarkmode = false;
   }
 
-}
+}  
+
 
 // Profile View
 var pro = document.getElementById("profileSide");

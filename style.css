@@ -172,6 +172,29 @@ html {
     transition: 0.3s;
 }
 
+.profileSidebar h1 {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    color: #fff;
+}
+
+.profileSidebar input {
+    border: none;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.profileSidebar button {
+    
+    width: 83%;
+    height: 25px;
+    border: none;
+    background-color: #cc0000;
+    color: #fff;
+    cursor: pointer;
+}
+
+
 /* Dark mode button */
 .dark-mode {
     position: sticky;

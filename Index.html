@@ -54,17 +54,18 @@
             </div>
         </div>
         <div class="profileSidebar" id="profileSide">
+            <h1>You are not Signed In</h1>
             <ul>
                 <li  onclick="openRegistration()">Register</li>
                 <div class="registerInput" id="registerInput">
                     <input type="email" name="email" id="email" placeholder="Email">
                     <input type="password" name="password" id="pass" placeholder="Password">
-                    <button>Enter</button>
+                    <button onclick="register()">Enter</button>
                 </div>
                 <li  onclick="openLogin()">Sign In</li>
                 <div class="loginInput" id="loginInput">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <input type="password" name="password" id="pass" placeholder="Password">
+                    <input type="email" name="email" id="email-Log" placeholder="Email">
+                    <input type="password" name="password" id="pass-Log" placeholder="Password">
                     <button>Enter</button>
                 </div>
                 <li>Login with Social</li>
@@ -419,6 +420,7 @@
         </div>
         <!-- Link to Javascript file -->
         <script src="script.js"></script>
+        <!-- <script src="FirebaseScript.js"></script> -->
     </div>
 
     <footer>
