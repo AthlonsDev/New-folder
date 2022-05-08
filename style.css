@@ -115,6 +115,63 @@ html {
     text-align: center;
 }
 
+.profile {
+    float: right;
+    /* margin-left: -90%; */
+    margin-top: 0.8%;
+    margin-right: -20%;
+}
+
+.profile .imageContainer2 {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.imageContainer2 img {
+    position: absolute;
+    width: 2.7%;
+    margin-top: -0.7%;
+}
+
+.profileSidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #ff0000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#content {
+    margin-right: 0px;
+    transition: 0.5s;
+}
+
+.profileSidebar li {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.registerInput {
+    display: none;
+    transition: 0.3s;
+}
+
+.loginInput {
+    display: none;
+    transition: 0.3s;
+}
+
 /* Dark mode button */
 .dark-mode {
     position: sticky;
@@ -170,8 +227,13 @@ html {
     list-style: none;
 }
 
+.slide {
+    display: none;
+    transition: 0.5s;
+}
+
 .slide img {
-    width: 1901px;
+    width: 1903px;
     height: 920px;
     object-fit: cover;
     object-position: center;
@@ -561,7 +623,7 @@ td:first-child {
         right: 0;
         padding-top: 60px;
         background-color: #ff0000;
-       
+
     }
 
     .sidebar a {

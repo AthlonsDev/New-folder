@@ -17,7 +17,7 @@ function carousel() {
   // x[i].style.opacity = 1;  
   // document.style.classList.fade();
 
-  setTimeout(carousel, 3000); // Change image every 2 seconds
+  setTimeout(carousel, 3000); // Change image every 3 seconds
 }
 
 
@@ -50,6 +50,38 @@ function toggleDarkmode() {
     isDarkmode = false;
   }
 
+}
+
+// Profile View
+var pro = document.getElementById("profileSide");
+function toggleProfile() {
+  if (pro.style.width != "250px") {
+    pro.style.width = "250px";
+    document.getElementById("content").style.marginRight = "250px";
+    document.getElementById("content").style.marginLeft = "-250px";
+  } else {
+    pro.style.width = "0px";
+    document.getElementById("content").style.marginRight = "0px";
+    document.getElementById("content").style.marginLeft = "0px";
+  }
+}
+
+function openRegistration() {
+  // alert("register clicked");
+  var register = document.getElementById("registerInput");
+  if (register.style.display == "none") {
+    register.style.display = "block";
+  } else {
+    register.style.display = "none";
+  }
+}
+function openLogin() {
+  var login = document.getElementById("loginInput");
+  if (login.style.display == "none") {
+    login.style.display = "block";
+  } else {
+    login.style.display = "none";
+  }
 }
 
 
