@@ -1,13 +1,16 @@
 
+// Initialize Firebase Authentication and get a reference to the service
+// import firebase from "firebase/app";
+// import "firebase/auth";
+
+
 function register() {
-  // const auth = getAuth();
-  
+
   var email = document.getElementById("email").value;
   var password = document.getElementById("pass").value;
 
   alert("email " + email);
-  //   Add validation for both
-
+    // Add validation for both
 
   // create user
   firebase.auth().createUserWithEmailAndPassword(email, password)
@@ -23,7 +26,7 @@ function register() {
     // ..
     alert(errorMessage);
   });
-
+ 
 }
 
 // Shows slides with timer
